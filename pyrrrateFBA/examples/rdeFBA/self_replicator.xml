@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml level="3" version="2" fbc:required="false" qual:required="true"
+xmlns="http://www.sbml.org/sbml/level3/version2/core"
+xmlns:ram="https://www.fairdomhub.org/sops/304"
+xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1"
+xmlns:ns2="http://www.w3.org/1998/Math/MathML"
+xmlns:ns="http://www.sbml.org/sbml/level3/version2/core"
+xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2">
+fbc:strict="false"&gt; <model id="self_regulator" name="self_regulator"
+    fbc:strict="false">
+    <listOfCompartments>
+      <compartment constant="true" id="extracellular"/>
+
+      <compartment constant="true" id="cytosol"/>
+    </listOfCompartments>
+
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="extracellular"
+               constant="false" hasOnlySubstanceUnits="true" id="C1"
+               initialAmount="500.0" name="Carbon1">
+        <annotation>
+          <ram:RAM>
+            <ram:species ram:biomassPercentage="0.0" ram:molecularWeight="0.0"
+                         ram:objectiveWeight="0.0"
+                         ram:speciesType="extracellular"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+
+      <species boundaryCondition="false" compartment="extracellular"
+               constant="false" hasOnlySubstanceUnits="true" id="C2"
+               initialAmount="1000.0" name="Carbon2">
+        <annotation>
+          <ram:RAM>
+            <ram:species ram:biomassPercentage="0.0" ram:molecularWeight="0.0"
+                         ram:objectiveWeight="0.0"
+                         ram:speciesType="extracellular"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+
+      <species boundaryCondition="false" compartment="cytosol"
+               constant="false" hasOnlySubstanceUnits="true" id="M"
+               initialAmount="0.0" name="metabolite">
+        <annotation>
+          <ram:RAM>
+            <ram:species ram:biomassPercentage="0.0" ram:molecularWeight="0.0"
+                         ram:objectiveWeight="0.0"
+                         ram:speciesType="metabolite"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+
+      <species boundaryCondition="false" compartment="cytosol"
+               constant="false" hasOnlySubstanceUnits="true" id="T1"
+               initialAmount="0.001" name="Transporter1">
+        <annotation>
+          <ram:RAM>
+            <ram:species ram:biomassPercentage="0.0"
+                         ram:molecularWeight="40000.0"
+                         ram:objectiveWeight="40000.0"
+                         ram:speciesType="enzyme"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+
+      <species boundaryCondition="false" compartment="cytosol"
+               constant="false" hasOnlySubstanceUnits="true" id="T2"
+               initialAmount="0.001" name="Transporter2">
+        <annotation>
+          <ram:RAM>
+            <ram:species ram:biomassPercentage="0.0"
+                         ram:molecularWeight="150000.0"
+                         ram:objectiveWeight="150000.0"
+                         ram:speciesType="enzyme"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+
+      <species boundaryCondition="false" compartment="cytosol"
+               constant="false" hasOnlySubstanceUnits="true" id="R"
+               initialAmount="0.01" name="Ribosome">
+        <annotation>
+          <ram:RAM>
+            <ram:species ram:biomassPercentage="0.0"
+                         ram:molecularWeight="745900.0"
+                         ram:objectiveWeight="745900.0"
+                         ram:speciesType="enzyme"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+
+      <species boundaryCondition="false" compartment="cytosol"
+               constant="false" hasOnlySubstanceUnits="true" id="RP"
+               initialAmount="0.0" name="Regulatory Protein">
+        <annotation>
+          <ram:RAM>
+            <ram:species ram:biomassPercentage="0.0"
+                         ram:molecularWeight="30000.0"
+                         ram:objectiveWeight="30000.0"
+                         ram:speciesType="enzyme"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+
+      <species boundaryCondition="false" compartment="cytosol"
+               constant="false" hasOnlySubstanceUnits="true" id="Q"
+               initialAmount="0.15">
+        <annotation>
+          <ram:RAM>
+            <ram:species ram:biomassPercentage="0.35"
+                         ram:molecularWeight="30000.0"
+                         ram:objectiveWeight="30000.0" ram:speciesType="quota"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+    </listOfSpecies>
+
+    <listOfReactions>
+      <reaction id="vC1" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="3000.0"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <fbc:geneProductAssociation fbc:id="T1">
+          <fbc:geneProductRef fbc:geneProduct="T1"/>
+        </fbc:geneProductAssociation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="C1" stoichiometry="1.0"/>
+        </listOfReactants>
+
+        <listOfProducts>
+          <speciesReference constant="true" species="M" stoichiometry="1.0"/>
+        </listOfProducts>
+      </reaction>
+
+      <reaction id="vC2" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="2000.0"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <fbc:geneProductAssociation fbc:id="T2">
+          <fbc:geneProductRef fbc:geneProduct="T2"/>
+        </fbc:geneProductAssociation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="C2" stoichiometry="1.0"/>
+        </listOfReactants>
+
+        <listOfProducts>
+          <speciesReference constant="true" species="M" stoichiometry="1.0"/>
+        </listOfProducts>
+      </reaction>
+
+      <reaction id="vQ" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="4.2"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <fbc:geneProductAssociation fbc:id="R">
+          <fbc:geneProductRef fbc:geneProduct="R"/>
+        </fbc:geneProductAssociation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="M" stoichiometry="300.0"/>
+        </listOfReactants>
+
+        <listOfProducts>
+          <speciesReference constant="true" species="Q" stoichiometry="1.0"/>
+        </listOfProducts>
+      </reaction>
+
+      <reaction id="vR" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="0.1689"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <fbc:geneProductAssociation fbc:id="R">
+          <fbc:geneProductRef fbc:geneProduct="R"/>
+        </fbc:geneProductAssociation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="M" stoichiometry="7459.0"/>
+        </listOfReactants>
+
+        <listOfProducts>
+          <speciesReference constant="true" species="R" stoichiometry="1.0"/>
+        </listOfProducts>
+      </reaction>
+
+      <reaction id="vT1" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="3.15"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <fbc:geneProductAssociation fbc:id="R">
+          <fbc:geneProductRef fbc:geneProduct="R"/>
+        </fbc:geneProductAssociation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="M" stoichiometry="400.0"/>
+        </listOfReactants>
+
+        <listOfProducts>
+          <speciesReference constant="true" species="T1" stoichiometry="1.0"/>
+        </listOfProducts>
+      </reaction>
+
+      <reaction id="vT2" reversible="false"
+                fbc:lowerFluxBound="fbc_vT2_fwd_lower"
+                fbc:upperFluxBound="fbc_vT2_fwd">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="0.84"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <fbc:geneProductAssociation fbc:id="R">
+          <fbc:geneProductRef fbc:geneProduct="R"/>
+        </fbc:geneProductAssociation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="M" stoichiometry="1500.0"/>
+        </listOfReactants>
+
+        <listOfProducts>
+          <speciesReference constant="true" species="T2" stoichiometry="1.0"/>
+        </listOfProducts>
+      </reaction>
+
+      <reaction id="vRP" reversible="false"
+                fbc:lowerFluxBound="fbc_vRP_fwd_lower"
+                fbc:upperFluxBound="fbc_vRP_fwd">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="4.2"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <fbc:geneProductAssociation fbc:id="R">
+          <fbc:geneProductRef fbc:geneProduct="R"/>
+        </fbc:geneProductAssociation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="M" stoichiometry="300.0"/>
+        </listOfReactants>
+
+        <listOfProducts>
+          <speciesReference constant="true" species="RP" stoichiometry="1.0"/>
+        </listOfProducts>
+      </reaction>
+
+      <reaction id="kdQ" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="NaN"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="Q" stoichiometry="0.01"/>
+        </listOfReactants>
+      </reaction>
+
+      <reaction id="kdR" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="NaN"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="R" stoichiometry="0.01"/>
+        </listOfReactants>
+      </reaction>
+
+      <reaction id="kdT1" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="NaN"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="T1" stoichiometry="0.01"/>
+        </listOfReactants>
+      </reaction>
+
+      <reaction id="kdT2" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="NaN"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="T2" stoichiometry="0.01"/>
+        </listOfReactants>
+      </reaction>
+
+      <reaction id="kdRP" reversible="false">
+        <annotation>
+          <ram:RAM>
+            <ram:reaction ram:kcatBackward="0.0" ram:kcatForward="NaN"
+                          ram:maintenanceScaling="0.0"/>
+          </ram:RAM>
+        </annotation>
+
+        <listOfReactants>
+          <speciesReference constant="true" species="RP" stoichiometry="0.2"/>
+
+          <speciesReference/>
+        </listOfReactants>
+      </reaction>
+    </listOfReactions>
+
+    <fbc:listOfGeneProducts>
+      <fbc:geneProduct fbc:associatedSpecies="T1" fbc:id="T1" fbc:label="G_T1"/>
+
+      <fbc:geneProduct fbc:associatedSpecies="T2" fbc:id="T2" fbc:label="G_T2"/>
+
+      <fbc:geneProduct fbc:associatedSpecies="R" fbc:id="R" fbc:label="G_R"/>
+
+      <fbc:geneProduct fbc:associatedSpecies="RP" fbc:id="RP" fbc:label="G_RP"/>
+    </fbc:listOfGeneProducts>
+
+    <qual:listOfQualitativeSpecies>
+      <qual:qualitativeSpecies qual:compartment="cytosol"
+                               qual:constant="false" qual:id="RPbar"
+                               qual:initialLevel="1" qual:maxLevel="1"/>
+
+      <qual:qualitativeSpecies qual:compartment="cytosol"
+                               qual:constant="false" qual:id="T2bar"
+                               qual:initialLevel="1" qual:maxLevel="1"/>
+    </qual:listOfQualitativeSpecies>
+
+    <listOfRules>
+      <assignmentRule variable="fbc_vT2_fwd">
+        <ns2:math>
+          <ns2:apply>
+            <ns2:times/>
+
+            <ns2:ci>NaN</ns2:ci>
+
+            <ns2:ci>qual_con_T2bar</ns2:ci>
+          </ns2:apply>
+        </ns2:math>
+      </assignmentRule>
+
+      <assignmentRule variable="fbc_vT2_fwd_lower">
+        <ns2:math>
+          <ns2:apply>
+            <ns2:times/>
+
+            <ns2:ci>e_T2</ns2:ci>
+
+            <ns2:ci>qual_con_T2bar</ns2:ci>
+          </ns2:apply>
+        </ns2:math>
+      </assignmentRule>
+
+      <assignmentRule variable="fbc_vRP_fwd">
+        <ns2:math>
+          <ns2:apply>
+            <ns2:times/>
+
+            <ns2:ci>NaN</ns2:ci>
+
+            <ns2:ci>qual_con_RPbar</ns2:ci>
+          </ns2:apply>
+        </ns2:math>
+      </assignmentRule>
+
+      <assignmentRule variable="fbc_vRP_fwd_lower">
+        <ns2:math>
+          <ns2:apply>
+            <ns2:times/>
+
+            <ns2:ci>e_RP</ns2:ci>
+
+            <ns2:ci>qual_con_RPbar</ns2:ci>
+          </ns2:apply>
+        </ns2:math>
+      </assignmentRule>
+
+      <assignmentRule variable="RPbar">
+        <ns2:math>
+          <ns2:ci>qual_con_RPbar</ns2:ci>
+        </ns2:math>
+      </assignmentRule>
+
+      <assignmentRule variable="T2bar">
+        <ns2:math>
+          <ns2:ci>qual_con_T2bar</ns2:ci>
+        </ns2:math>
+      </assignmentRule>
+    </listOfRules>
+
+    <listOfEvents>
+      <event id="high_C1" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <ns2:math>
+            <ns2:apply>
+              <ns2:geq/>
+
+              <ns2:ci>C1</ns2:ci>
+
+              <ns2:ci>gamma</ns2:ci>
+            </ns2:apply>
+          </ns2:math>
+        </trigger>
+
+        <listOfEventAssignments>
+          <eventAssignment variable="qual_con_RPbar">
+            <ns2:math>
+              <ns2:cn type="integer">1</ns2:cn>
+            </ns2:math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+
+      <event id="low_C1" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <ns2:math>
+            <ns2:apply>
+              <ns2:lt/>
+
+              <ns2:ci>C1</ns2:ci>
+
+              <ns2:ci>gamma</ns2:ci>
+            </ns2:apply>
+          </ns2:math>
+        </trigger>
+
+        <listOfEventAssignments>
+          <eventAssignment variable="qual_con_RPbar">
+            <ns2:math>
+              <ns2:cn type="integer">0</ns2:cn>
+            </ns2:math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+
+      <event id="high_RP" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <ns2:math>
+            <ns2:apply>
+              <ns2:geq/>
+
+              <ns2:ci>RP</ns2:ci>
+
+              <ns2:ci>alpha</ns2:ci>
+            </ns2:apply>
+          </ns2:math>
+        </trigger>
+
+        <listOfEventAssignments>
+          <eventAssignment variable="qual_con_T2bar">
+            <ns2:math>
+              <ns2:cn type="integer">0</ns2:cn>
+            </ns2:math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+
+      <event id="low_RP" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <ns2:math>
+            <ns2:apply>
+              <ns2:lt/>
+
+              <ns2:ci>RP</ns2:ci>
+
+              <ns2:ci>alpha</ns2:ci>
+            </ns2:apply>
+          </ns2:math>
+        </trigger>
+
+        <listOfEventAssignments>
+          <eventAssignment variable="qual_con_T2bar">
+            <ns2:math>
+              <ns2:cn type="integer">1</ns2:cn>
+            </ns2:math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+    </listOfEvents>
+
+    <listOfParameters>
+      <parameter constant="true" id="alpha" value="0.03"/>
+
+      <parameter constant="true" id="gamma" value="20"/>
+
+      <parameter constant="true" id="e_T2" value="0.001"/>
+
+      <parameter constant="true" id="e_RP" value="0.01"/>
+
+      <parameter constant="false" id="fbc_vT2_fwd" value="NaN"/>
+
+      <parameter constant="false" id="fbc_vT2_fwd_lower" value="NaN"/>
+
+      <parameter constant="false" id="fbc_vRP_fwd" value="NaN"/>
+
+      <parameter constant="false" id="fbc_vRP_fwd_lower" value="NaN"/>
+
+      <parameter constant="false" id="qual_con_RPbar" value="NaN"/>
+
+      <parameter constant="false" id="qual_con_T2bar" value="NaN"/>
+    </listOfParameters>
+  </model> </sbml>

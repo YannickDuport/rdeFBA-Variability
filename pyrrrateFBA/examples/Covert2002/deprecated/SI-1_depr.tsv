@@ -1,0 +1,140 @@
+ID	Protein	Gene	Reaction	Regulatory logic	References	Notes
+
+ACEA	Isocitrate lyase	aceA	ICIT -> GLX + SUCC	IF not (IclR)	1,2,31	Cra may also have a role in regulation.
+ACEB	Malate synthase A	aceB	ACCOA + GLX -> COA + MAL	IF not (ArcA or IclR)	1,2,23,31	Cra may also have a role in regulation.
+ACEE	Pyruvate dehydrogenase	aceEF, lpdA	PYR + COA + NAD -> NADH + CO2 + ACCOA	IF (not PdhR)	1,3
+ACKAR	Acetate kinase A	ackA	ACTP + ADP <-> ATP + AC
+ACNAR	Aconitase A	acnA	CIT <-> ICIT	IF (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxt or SUCCxt or ETHxt or ACxt or FORxt)	4	Although ArcA, FNR and Cra are implicated in regulation of acnA and acnB, a double knockout study indicates that aconitase activity is essential; hence, these proteins are assumed to be non-constraining in this case.
+ACNBR	Aconitase B	acnB	CIT <-> ICIT	IF (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxt or SUCCxt or ETHxt or ACxt or FORxt)	4	Although ArcA, FNR and Cra are implicated in regulation of acnA and acnB, a double knockout study indicates that aconitase activity is essential; hence, these proteins are assumed to be non-constraining in this case.
+ACS	Acetyl-CoA synthetase	acs	ATP + AC + COA -> AMP + PPI + ACCOA	IF not (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxt or SUCxt or ETHxt) and (not IclR)	5	FNR seems to be weakly involved in regulation as well.
+ADHER	Acetaldehyde dehydrogenase	adhE	ACCOA +2 NADH <-> ETH +2 NAD + COA	IF not (O2xt) or not (O2xt and Cra)	6,7	Induction is significantly stronger under anaerobic than aerobic conditions.
+ADK	Adenylate kinase	adk	ATP + AMP <-> 2 ADP
+ATPAR	F0F1-ATPase	atpABCDEFGHI	ATP <-> ADP + PI +4 HEXT
+CYDA	Cytochrome oxidase bd	cydAB	QH2 +.5 O2 -> Q +2 HEXT	IF (not FNR) or ArcA	25	CydA is microaerophilic so there are competing influences from ArcA and FNR.
+CYOA	Cytochrome oxidase bo3	cyoABCD	QH2 +.5 O2 -> Q +2.5 HEXT	IF not (ArcA or FNR)	25
+DLD1R	D-Lactate dehydrogenase 1	dld	PYR + NADH <-> NAD + LAC
+DLD2	D-Lactate dehydrogenase (cyctochrome)	dld	LAC + Q -> PYR + QH2
+ENOR	Enolase	eno	PG2 <-> PEP
+FBAR	Fructose-1,6-bisphosphatate aldolase	fba	FDP <-> T3P1 + T3P2
+FBP	Fructose-1,6-bisphosphatase	fbp	FDP -> F6P + PI
+FDNG	Formate dehydrogenase-N	fdnGHI	FOR + Q -> QH2 + CO2 +2 HEXT	IF FNR	32,33	These genes are apparently only transcribed when induced by FNR and NarL (nitrate responder).  Because nitrate regulation is not accounted for here, the constraint given here is conservative.
+FDOH	Formate dehydrogenase-O	fdoIHG	FOR + Q -> QH2 + CO2 +2 HEXT
+FRDA	Fumarate reductase	frdABCD	FUM + FADH -> SUCC + FAD	IF FNR or DcuR	18,25
+FUMAR	Fumarase A	fumA	FUM <-> MAL	IF not (ArcA or FNR)	26
+FUMBR	Fumarase B	fumB	FUM <-> MAL	IF FNR	27
+FUMCR	Fumarase C	fumC	FUM <-> MAL	IF (superoxide radicals)	26	Accumulation of superoxide radicals in the cell is as yet unaccounted for.
+GALER	UDP-glucose 4-epimerase	galE	UDPGAL <-> UDPG	IF not (GLCxt) and not (GalR or GalS)	49
+GALKR	Galactokinase	galK	GLAC + ATP <-> GAL1P + ADP	IF not (GLCxt) and not (GalR or GalS)	49
+GALM1R	Aldose 1-epimerase (mutorotase)	galM	bDGLAC <-> GLAC	IF not (GLCxt) and not (GalR or GalS)	49
+GALM2R	Aldose 1-epimerase (mutorotase)	galM	bDGLC <-> GLC	IF not (GLCxt) and not (GalR or GalS)	49
+GALTR	Galactose-1-phosphate uridylyltransferase	galT	GAL1P + UTP <-> PPI + UDPGAL	IF not (GLCxt) and not (GalR or GalS)	49
+GALUR	UDP-glucose-1-phosphate uridylyltransferase	galU	G1P + UTP <-> UDPG + PPI
+GAPAR	Glyceraldehyde-3-phosphate dehydrogenase-A complex	gapA	T3P1 + PI + NAD <->  NADH + PDG13		24	Glucose induces transcription but there appears to be a constant basal level of the enzyme.
+GLK	Glucokinase	glk	GLC + ATP -> G6P + ADP
+GLPA	Glycerol-3-phosphate dehydrogenase (anaerobic)	glpABC	GL3P + Q -> T3P2 + QH2	IF not (GLCxt or LCTSxt or RIBxt) and FNR and not GlpR	22,28,34
+GLPD	Glycerol-3-phosphate dehydrogenase (aerobic)	glpD	GL3P + Q -> T3P2 + QH2	IF not (GLCxt or LCTSxt or RIBxt) and not (ArcA or GlpR)	22,28,34,35
+GLPK	Glycerol kinase	glpK	GL + ATP -> GL3P + ADP	IF not (GLCxt or LCTSxt or RIBxt) and not GlpR	22,28,38
+GLTA	Citrate synthase	gltA	ACCOA + OA -> COA + CIT		36	Although ArcA plays an apparently small regulatory role, gltA is a lethal deletion in the model, and so the constraint is relaxed.
+GND	6-Phosphogluconate dehydrogenase (decarboxylating)	gnd	D6PGC + NADP -> NADPH + CO2 + RL5P
+GPMAR	Phosphoglycerate mutase 1	gpmA	PG3 <-> PG2
+GPMBR	Phosphoglycerate mutase 2	gpmB	PG3 <-> PG2
+GPSAR	Glycerol-3-phosphate-dehydrogenase-[NAD(P)+]	gpsA	GL3P + NADP <-> T3P2 + NADPH
+ICDAR	Isocitrate dehydrogenase	icdA	ICIT + NADP <-> CO2 + NADPH + AKG		20,21	Although there are two promoters, one which is repressed by ArcA and one which is repressed by Cra, icdA is a lethal deletion to the system, so the constraint is relaxed.
+LACZ	Beta-galactosidase (LACTase)	lacZ	LCTS -> GLC + bDGLAC	IF not (GLCxt) and not (lacI)	49
+MAEB	Malic enzyme (NADP)	maeB	MAL + NADP -> CO2 + NADPH + PYR
+MDHR	Malate dehydrogenase	mdh	MAL + NAD <-> NADH + OA	IF not ArcA
+NDH	NADH dehydrogenase II	ndh	NADH + Q -> NAD + QH2	IF not FNR
+NUOA	NADH dehydrogenase I	nuoABEFGHIJKLMN	NADH + Q -> NAD + QH2 +3.5 HEXT		29
+PCKA	Phosphoenolpyruvate carboxykinase	pckA	OA + ATP -> PEP + CO2 + ADP
+PFKA	Phosphofructokinase	pfkA	F6P + ATP -> FDP + ADP
+PFKB	Phosphofructokinase B	pfkB	F6P + ATP -> FDP + ADP
+PFLA	Pyruvate formate lyase 1	pflAB	PYR + COA -> ACCOA + FOR	IF (ArcA or FNR)	23,40
+PFLC	Pyruvate formate lyase 2	pflCD	PYR + COA -> ACCOA + FOR	IF (ArcA or FNR)	23,40
+PGIR	Phosphoglucose isomerase	pgi	G6P <-> F6P
+PGKR	Phosphoglycerate kinase	pgk	PDG13 + ADP <-> PG3 + ATP	IF (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxtor SUCCxt or ETHxt or ACxt or FORxt)	24	Although there is CRP control, there is always a basal level of activation.
+PGL	6-Phosphogluconolactonase	pgl	D6PGL -> D6PGC
+PGMR	Phosphoglucomutase	pgm	G1P <-> G6P
+PNTA1	Pyridine nucleotide transhydrogenase	pntAB	NADPH + NAD -> NADP + NADH
+PNTA2	Pyridine nucleotide transhydrogenase	pntAB	NADP + NADH +2 HEXT -> NADPH + NAD
+PPA	Inorganic pyrophosphatase	ppa	PPI -> 2 PI
+PPC	Phosphoenolpyruvate carboxylase	ppc	PEP + CO2 -> OA + PI
+PPSA	Phosphoenolpyruvate synthase	ppsA	PYR + ATP -> PEP + AMP + PI	IF (Cra)	37
+PTAR	Phosphotransacetylase	pta	ACCOA + PI <-> ACTP + COA
+PYKA	Pyruvate Kinase II	pykA	PEP + ADP -> PYR + ATP
+PYKF	Pyruvate Kinase I	pykF	PEP + ADP -> PYR + ATP	IF (not Cra)	19
+RBSK	Ribokinase	rbsK	RIB + ATP -> R5P + ADP	IF not (GLCxt or LCTSxt) and not (RbsR)	8-10
+RPER	Ribulose phosphate 3-epimerase	rpe	RL5P <-> X5P
+RPIAR	Ribose-5-phosphate isomerase A	rpiA	RL5P <-> R5P
+RPIBR	Ribose-5-phosphate isomerase B	rpiB	RL5P <-> R5P	IF not RpiR	11,12
+SDHA1	Succinate dehydrogenase	sdhABCD	SUCC + FAD -> FADH + FUM	IF not (ArcA or FNR)	13,14
+SDHA2	Succinate dehydrogenase complex	sdhABCD	FADH + Q <-> FAD + QH2	IF not (ArcA or FNR)	13,14
+SFCA	Malic enzyme (NAD)	sfcA	MAL + NAD -> CO2 + NADH + PYR
+SUCA	2-Ketoglutarate dehyrogenase	sucAB, lpdA	AKG + NAD + COA -> CO2 + NADH + SUCCOA	IF (not PdhR)	1,3,13,14,41	LpdA and sucAB both are parts of large operons but have their own promoters; they are affected by PdhR and ArcA, respectively.  As the regulation is moderate and this complex is required for succinate production under fermentative conditions, the const
+SUCCR	Succinyl-CoA synthetase	sucCD	SUCCOA + ADP + PI <-> ATP + COA + SUCC		13,14	sucABCD transcription is regulated but there is one promoter for which no regulation has been found; consequently the regulation is non-constraining.
+TALAR	Transaldolase A	talA	T3P1 + S7P <-> E4P + F6P
+TALBR	Transaldolase B	talB	T3P1 + S7P <-> E4P + F6P
+TKTA1R	Transketolase I	tktA	R5P + X5P <-> T3P1 + S7P
+TKTA2R	Transketolase I	tktA	X5P + E4P <-> F6P + T3P1
+TKTB1R	Transketolase II	tktB	R5P + X5P <-> T3P1 + S7P
+TKTB2R	Transketolase II	tktB	X5P + E4P <-> F6P + T3P1
+TPIAR	Triosphosphate Isomerase	tpiA	T3P1 <-> T3P2
+ZWFR	Glucose 6-phosphate-1-dehydrogenase	zwf	G6P + NADP <-> D6PGL + NADPH
+ACUPR	Acetate transport		ACxt + HEXT <-> AC
+CO2TXR	Carbon dioxide transport		CO2xt <-> CO2
+ETHUPR	Ethanol transport		ETHxt + HEXT <-> ETH
+FORUPR	Formate transport	focA	FORxt <-> FOR	IF (ArcA or FNR)	23,40
+GLCPTS	Glucose transport	ptsGHI, crr	GLCxt + PEP -> G6P + PYR	IF (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxtor SUCCxt or ETHxt or ACxt or FORxt) and not Mlc) or (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxt or SUCCxt or ETHxt or ACxt or FORxt) and not Cra)	45,46,47,48
+GLCUP	Glucose transport (low affinity)	galP, etc.	GLCxt + HEXT -> GLC	IF (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxtor SUCCxt or ETHxt or ACxt or FORxt)	42,43,44
+GLUPR	Glycerol transporter	glpF	GLxt <-> GL	IF not (GLCxt or LCTSxt or RIBxt) and not GlpR38
+LACUP	Lactate uptake		LACxt + HEXT -> LAC	IF not (GLCxt or LCTSxt or RIBxt or GLxt)	22
+LACDN	Lactate secretion		LAC -> LACxt + HEXT
+LACYR	Lactose permease	lacY	LCTSxt + HEXT <-> LCTS	IF not (GLCxt) and not (lacI)	49
+O2TXR	Oxygen transport		O2xt <-> O2
+PIUP2R	Phosphate transport	pitAB	PIxt + HEXT <-> PI
+PYRUPR	Pyruvate transport		PYRxt + HEXT <-> PYR
+RIBUPR	Ribose transport	rbsABCD	RIBxt + ATP -> RIB + ADP + PI	IF not (GLCxt or LCTSxt) and not RbsR	8-10
+DCTAR	Succinate transport	dctA	SUCCxt + HEXT <-> SUCC	IF not (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxt) and not ArcA and DcuR	15
+DCUAR	Succinate transport	dcuA	SUCCxt + HEXT <-> SUCC		16	Anaerobic enzyme, but constitutively expressed.
+DCUBR	Succinate transport	dcuB	SUCCxt + HEXT <-> SUCC	IF not (GLCxt or LCTSxt or RIBxt or GLxt or LACxt or PYRxt) and FNR and DcuR	16
+DCUC	Succinate efflux	dcuC	SUCC -> SUCCxt +HEXT	IF (FNR or ArcA)	17
+
+C. Maintenance/Biomass Production Fluxes
+
+ATPM	ATP non-growth associated maintenance flux		ATP -> ADP + PI
+VGRO	Biomass production flux		41.25 ATP + 3.54 NAD + 18.22 NADPH + 0.2 G6P + 0.07 F6P + 0.89 R5P + 0.36 E4P + 0.12 T3P1 + 1.49 PG3 + 0.51 PEP + 2.83 PYR + 3.74 ACCOA + 1.78 OA + 1.07 AKG -> 3.74 COA + 41.25 ADP + 41.25 PI + 3.54 NADH + 18.22 NADP + 1 Biomass		51
+
+D. Exchange Fluxes
+
+ACex	Acetate exchange		ACxt ->
+CO2ex	Carbon dioxide exchange		CO2xt ->
+ETHex	Ethanol exchange		ETHxt  ->
+FORex	Formate exchange		FORxt  ->
+GLCex	Glucose exchange		GLCxt ->
+GLex	Glycerol exchange		GLxt ->
+Growth	Biomass exchange (growth)		Biomass + 13 ATP -> 13 ADP + 13 PI			Includes growth-associated ATP maintenance.
+LACex	Lactate exchange		LACxt  ->
+LCTSex	Lactose exchange		LCTSxt ->
+O2ex	Oxygen exchange		O2xt ->
+PIex	Phosphate exchange		PIxt ->
+PYRex	Pyruvate exchange		PYRxt  ->
+RIBex	Ribose exchange		RIBxt  ->
+SUCCex	Succinate exchange		SUCCxt  ->
+
+E. Regulatory Proteins
+
+	Aerobic/Anaerobic response regulator	arcA		active IF not (O2xt)	23,30
+	Catabolite activator protein	cra (fruR)		active IF not (surplus FDP or F6P)*	19	Surplus FDP or F6P = if not (VFBP > 0 and not (VTKTA2R > 0 or VTKTB2R > 0 or VTALAR > 0 or VTALBR > 0 or VPGIR > 0)), where VX represents the flux of reaction X.
+	Catabolite repressor protein	crp		action is complex and highlighted in italics above	22,50
+	Dicarboxylate response regulator	dcuR		active IF DcuS	18
+	Dicarboxylate response sensor	dcuS		active IF (SUCCxt)	18
+	Fatty acid/Acetate response regulator	fadR		active IF (GLCxt) or not (ACxt)	2
+	Aerobic/Anaerobic response regulator	fnr		active IF not (O2xt)	23,30
+	Galactose operon repressor	galR		active IF not (GLAC)	49	For this limited model, the presence of GLAC will simply be equated with LCTSxt.
+	Galactose operon repressor	galS		active IF not (GLAC)	49	For this limited model, the presence of GLAC will simply be equated with LCTSxt.
+	Glycerol response regulator	glpR		active IF not (GLxt)	38,39	The inducer is actually thought to be glycerol 3-phosphate. This becomes more important when G3P permease is considered.
+	Fatty acid/Acetate response regulator	iclR		active IF FadR	2, 31
+	Lactose operon repressor	lacI		active IF not (LCTSxt)	49	The actual metabolite that binds to lacI to inhibit its repression is allolactose.
+	Glucose response regulator	mlc		active IF not (GLCxt)
+	Pyruvate response regulator	pdhR		active IF not (surplus PYR)**	3	Surplus PYR = if not ((VMAEB > 0 or VSFCA > 0) and not (VGLCPTS > 0 or VPYFK > 0 or VPYKA > 0 or VDLD1R < 0 or VDLD2 > 0 or VDCTAR > 0 or VDCUAR > 0 or VDCUBR > 0)), where VX represents the flux of reaction X.
+	Ribose response regulator	rbsR		active IF not (RIBxt)	8-10
+	Ribose response regulator	rpiR		active IF not (RIBxt)	12

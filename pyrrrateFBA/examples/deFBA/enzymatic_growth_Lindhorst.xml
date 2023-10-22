@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" fbc:required="false">
+  <model id="enzymatic_growth" name="enzymatic_growth" fbc:strict="false">
+    <annotation>
+      <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
+        <rdf:Description rdf:about="#deFBAmodel">
+          <dcterms:creator rdf:parseType="Resource">
+            <rdf:bag>
+              <rdf:li>
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Lindhorst</vCard:Family>
+                  <vCard:Given>Henning</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>henning.lindhorst@ovgu.de</vCard:EMAIL>
+                <vCard:ORG>
+                  <vCard:Orgname>Otto-von-Guericke University Magdeburg</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:bag>
+          </dcterms:creator>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+
+    <listOfCompartments>
+      <compartment id="external" name="extracellular compartment. nutrients, waste, etc." spatialDimensions="3" size="1" constant="true"/>
+      <compartment id="cytosol" name="cytosol. Collecting all non external components" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    
+    <listOfSpecies>
+      <species id="N"   compartment="external"    initialAmount="2000"  constant="false"  boundaryCondition="false" hasOnlySubstanceUnits="true">
+	    <annotation>
+        <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+          <ram:species ram:molecularWeight="zero" ram:objectiveWeight="zero" ram:biomassPercentage="zero" ram:speciesType="extracellular"/>
+        </ram:RAM>
+	  </annotation>
+      </species>
+      <species id="A"   compartment="cytosol"     initialAmount="0"     constant="false"  boundaryCondition="false" hasOnlySubstanceUnits="true">
+	    <annotation>
+          <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+            <ram:species ram:molecularWeight="zero" ram:objectiveWeight="zero" ram:biomassPercentage="zero" ram:speciesType="metabolite"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+      <species id="M"   compartment="cytosol"     initialAmount="0.1"   constant="false"  boundaryCondition="false" hasOnlySubstanceUnits="true">
+        <annotation>
+          <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+            <ram:species ram:molecularWeight="weighM" ram:objectiveWeight="oWeightM" ram:biomassPercentage="zero" ram:speciesType="storage"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+      <species id="E"   compartment="cytosol"     initialAmount="0.1"   constant="false"  boundaryCondition="false" hasOnlySubstanceUnits="true">
+        <annotation>
+          <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+            <ram:species ram:molecularWeight="weighE" ram:objectiveWeight="oWeightE" ram:biomassPercentage="zero" ram:speciesType="enzyme"/>
+          </ram:RAM>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    
+    <listOfParameters>
+      <parameter constant="true" id="zero"     value="0"    />
+      <parameter constant="true" id="weighM"   value="150"  />
+      <parameter constant="true" id="weighE"   value="100"  />
+      <parameter constant="true" id="oWeightM"  value="150"  />
+      <parameter constant="true" id="oWeightE"  value="100"  />
+      <parameter constant="true" id="kcatA"    value="150"  />
+      <parameter constant="true" id="kcatE"    value="1"    />
+      <parameter constant="true" id="kcatM"    value="2"    />
+    </listOfParameters>
+    
+    <fbc:listOfGeneProducts>
+      <fbc:geneProduct fbc:id="E" fbc:label="enzymes" fbc:associatedSpecies="E"/>
+    </fbc:listOfGeneProducts>
+    
+    <listOfReactions>
+      <reaction id="VA" reversible="false" fast="false">
+        <fbc:geneProductAssociation fbc:id="Enzymes">
+            <fbc:geneProductRef fbc:geneProduct="E" />
+        </fbc:geneProductAssociation>
+        <listOfReactants>
+          <speciesReference species="N" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <annotation>
+          <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+            <ram:reaction ram:kcatForward="kcatA" ram:kcatBackward="zero" ram:maintenanceScaling="zero"/>
+          </ram:RAM>
+        </annotation>
+      </reaction>
+      <reaction id="VE" reversible="false" fast="false">
+        <fbc:geneProductAssociation fbc:id="Enzymes">
+            <fbc:geneProductRef fbc:geneProduct="E" />
+        </fbc:geneProductAssociation>
+        <listOfReactants>
+          <speciesReference species="N" stoichiometry="100" constant="true"/>
+          <speciesReference species="A" stoichiometry="100" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <annotation>
+          <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+            <ram:reaction ram:kcatForward="kcatE" ram:kcatBackward="zero" ram:maintenanceScaling="zero"/>
+          </ram:RAM>
+        </annotation>
+      </reaction>
+      <reaction id="VM" reversible="false" fast="false">
+        <fbc:geneProductAssociation fbc:id="Enzymes">
+            <fbc:geneProductRef fbc:geneProduct="E" />
+        </fbc:geneProductAssociation>
+        <listOfReactants>
+          <speciesReference species="N" stoichiometry="100" constant="true"/>
+	        <speciesReference species="A" stoichiometry="100" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+	<annotation>
+          <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+            <ram:reaction ram:kcatForward="kcatM" ram:kcatBackward="zero" ram:maintenanceScaling="zero"/>
+          </ram:RAM>
+        </annotation>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

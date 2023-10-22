@@ -1,0 +1,99 @@
+Covert ID	Protein	Gene	Reaction	BiGG ID	reversible	kcat_fwd/s	kcat_bwd/s	Organism (fwd)	EC number	Organism (bwd)
+ACEA	Isocitrate lyase	aceA	ICIT -> GLX + SUCC	ICL	FALSE	145.44	0.00	All organisms	4.1.3.1	
+ACEB	Malate synthase A	aceB	ACCOA + GLX -> COA + MAL	MALS	FALSE	48.10	0.00	E. coli	2.3.3.9	
+ACEE	Pyruvate dehydrogenase	aceE, aceF, lpdA	PYR + COA + NAD -> NADH + CO2 + ACCOA	PDH	FALSE	0.52	0.00	E. coli	1.2.4.1	
+ACKAR	Acetate kinase A	ackA	ACTP + ADP <-> ATP + AC	ACKr	TRUE	632.67	942.75	All organisms	2.7.2.1	
+ACNAR	Aconitase A	acnA	CIT <-> ICIT	ACONTa	TRUE	44.80	44.80	E. coli	4.2.1.3	
+ACNBR	Aconitase B	acnB	CIT <-> ICIT	ACONTb	TRUE	44.80	44.80	E. coli	4.2.1.3	
+ACS	Acetyl-CoA synthetase	acs	ATP + AC + COA -> AMP + PPI + ACCOA	ACS	FALSE	66.60	0.00	All organisms	6.2.1.1	
+ACUPR	Acetate transport		ACxt + HEXT <-> AC		TRUE	diffusion	diffusion			
+ADHER	Acetaldehyde dehydrogenase	adh	ACCOA +2 NADH <-> ETH +2 NAD + COA	ACALD	TRUE	15.70	0.01	E. coli	1.2.1.10	All organisms
+ADK	Adenylate kinase	adk	ATP + AMP <-> 2 ADP	ADK1	TRUE	585.40	783.00	All organisms	2.7.4.3	
+ATPAR	F0F1-ATPase	atpA, atpB, atpC, atpD, atpE, atpF, atpG, atpH, atpI	ATP <-> ADP + PI +4 HEXT	ATPS4rpp	TRUE	3800.00	160.00	E. coli	7.1.2.2	
+CO2TXR	Carbon dioxide transport		CO2xt <-> CO2		TRUE	diffusion	diffusion			
+CYDA	Cytochrome oxidase bd	cydA, cydB	QH2 +.5 O2 -> Q +2 HEXT	CYTBDpp	FALSE	101.00	0.00	E. coli	7.1.1.7	
+CYOA	Cytochrome oxidase bo3	cyoA, cyoB, cyoC, cyoD	QH2 +.5 O2 -> Q +2.5 HEXT	CYTBO3_4pp	FALSE	320.50	0.00	E. coli	7.1.1.3	
+DCTAR	Succinate transport	dctA	SUCCxt + HEXT <-> SUCC	SUCCt2_2pp	TRUE	kcat	kcat			
+DCUAR	Succinate transport	dcuA	SUCCxt + HEXT <-> SUCC	SUCCt2_3pp	TRUE	kcat	kcat			
+DCUBR	Succinate transport	dcuB	SUCCxt + HEXT <-> SUCC	SUCCt2_3pp	TRUE	kcat	kcat			
+DCUC	Succinate efflux	dcuC	SUCC -> SUCCxt +HEXT	SUCCt2_3pp	FALSE	kcat	0.00			
+DLD1R	D-Lactate dehydrogenase 1	dld	PYR + NADH <-> NAD + LAC	LDH_D	TRUE	kcat	320.50		1.1.5.12	
+DLD2	D-Lactate dehydrogenase (cyctochrome)	dld	LAC + Q -> PYR + QH2	LDH_D2	FALSE	875.00	0.00	All organisms	1.1.2.4	
+ENOR	Enolase	eno	PG2 <-> PEP	ENO	TRUE	61.55	24.97	All organisms	4.2.1.11	
+ETHUPR	Ethanol transport		ETHxt + HEXT <-> ETH		TRUE	diffusion	diffusion			
+FBAR	Fructose-1,6-bisphosphatate aldolase	fba	FDP <-> T3P1 + T3P2	FBA	TRUE	10.85	0.56	All organisms	4.1.2.13	E. coli
+FBP	Fructose-1,6-bisphosphatase	fbp	FDP -> F6P + PI	FBP	FALSE	19.10	0.00	E. coli	3.1.3.11	
+FDNG	Formate dehydrogenase-N	fdnG, fdnH, fdnI	FOR + Q -> QH2 + CO2 +2 HEXT	FDH4pp	FALSE	563.00	0.00	E. coli	1.17.5.3	
+FDOH	Formate dehydrogenase-O	fdoI, fdoH, fdoG	FOR + Q -> QH2 + CO2 +2 HEXT	FDH4pp	FALSE	4.10	0.00	All organisms	1.17.1.9	
+FORUPR	Formate transport	focA	FORxt <-> FOR	FORtppi	TRUE	kcat	kcat			
+FRDA	Fumarate reductase	frdA, frdB, frdC, frdD	FUM + FADH -> SUCC + FAD	FRDm	FALSE	250.00	0.00	E. coli	1.3.5.4	
+FUMAR	Fumarase A	fumA	FUM <-> MAL	FUM	TRUE	290.06	40.11	E. coli	4.2.1.2	
+FUMBR	Fumarase B	fumB	FUM <-> MAL	FUM	TRUE	290.06	40.11	E. coli	4.2.1.2	
+FUMCR	Fumarase C	fumC	FUM <-> MAL	FUM	TRUE	290.06	40.11	E. coli	4.2.1.2	
+GALER	UDP-glucose 4-epimerase	galE	UDPGAL <-> UDPG	UDPG4E	TRUE	18.00	630.00	E. coli	5.1.3.2	
+GALKR	Galactokinase	galK	GLAC + ATP <-> GAL1P + ADP	GALKr	TRUE	8.70	kcat	All organisms	2.7.1.6	
+GALM1R	Aldose 1-epimerase (mutorotase)	galM	bDGLAC <-> GLAC	GALM2pp	TRUE	6.50	4.00	E. coli	5.1.3.3	
+GALM2R	Aldose 1-epimerase (mutorotase)	galM	bDGLC <-> GLC	GALM2pp	TRUE	15.00	33.50	E. coli	5.1.3.3	
+GALTR	Galactose-1-phosphate uridylyltransferase	galT	GAL1P + UTP <-> PPI + UDPGAL	UGLT	TRUE	281.00	177.00	E. coli	2.7.7.12	
+GALUR	UDP-glucose-1-phosphate uridylyltransferase	galU	G1P + UTP <-> UDPG + PPI	GALUi	TRUE	28.00	19.98	All organisms	2.7.7.9	
+GAPAR	Glyceraldehyde-3-phosphate dehydrogenase-A complex	gapA	T3P1 + PI + NAD <->  NADH + PDG13	GAPD	TRUE	40.30	0.12	All organisms	1.2.1.12	
+GLCPTS	Glucose transport	ptsG, ptsH, ptsI, crr	GLCxt + PEP -> G6P + PYR	GLCptspp	FALSE	kcat	0.00		2.7.1.99, 2.7.3.9	
+GLCUP	Glucose transport (low affinity)	galP	GLCxt + HEXT -> GLC	GLCt2pp	FALSE	kcat	0.00			
+GLK	Glucokinase	glk	GLC + ATP -> G6P + ADP	HEX1	FALSE	85.71	0.00	All organisms	2.7.1.1	
+GLPA	Glycerol-3-phosphate dehydrogenase (anaerobic)	glpA, glpB, glpC	GL3P + Q -> T3P2 + QH2	G3PD5	FALSE	0.10	0.00	E. coli	1.1.5.3	
+GLPD	Glycerol-3-phosphate dehydrogenase (aerobic)	glpD	GL3P + Q -> T3P2 + QH2	G3PD5	FALSE	kcat	0.00			
+GLPK	Glycerol kinase	glpK	GL + ATP -> GL3P + ADP	GLYK	FALSE	1670.00	0.00	All organisms	2.7.1.30	
+GLTA	Citrate synthase	gltA	ACCOA + OA -> COA + CIT	CS	FALSE	44.00	0.00	E. coli	2.3.3.16	
+GLUPR	Glycerol transporter	glpF	GLxt <-> GL	GLYCtpp	TRUE	kcat	kcat			
+GND	6-Phosphogluconate dehydrogenase (decarboxylating)	gnd	D6PGC + NADP -> NADPH + CO2 + RL5P	GND	FALSE	39.54	0.00	All organisms	1.1.1.44	
+GPMAR	Phosphoglycerate mutase 1	gpmA	PG3 <-> PG2	PGM	TRUE	5.20	255.20	All organisms	5.4.2.11	
+GPMBR	Phosphoglycerate mutase 2	gpmB	PG3 <-> PG2	PGM	TRUE	5.20	255.20	All organisms	5.4.2.11	
+GPSAR	Glycerol-3-phosphate-dehydrogenase-[NAD(P)+]	gpsA	GL3P + NADP <-> T3P2 + NADPH	G3PD2	TRUE	33.30	0.01	E. coli (FAD instead of NADH)	1.1.5.3	1.1.1.94
+ICDAR	Isocitrate dehydrogenase	icdA	ICIT + NADP <-> CO2 + NADPH + AKG	ICDHyr	TRUE	28.59	0.25	All organisms	1.1.1.42	
+LACDN	Lactate secretion		LACxt + HEXT -> LAC		FALSE	diffusion	0.00			
+LACUP	Lactate uptake		LAC -> LACxt + HEXT		FALSE	diffusion	0.00			
+LACYR	Lactose permease	lacY	LCTSxt + HEXT <-> LCTS	LCTStpp	TRUE	kcat	kcat			
+LACZ	Beta-galactosidase (LACTase)	lacZ	LCTS -> GLC + bDGLAC	LACZ	FALSE	49.35	0.00	All organisms	3.2.1.23	
+MAEB	Malic enzyme (NADP)	maeB	MAL + NADP -> CO2 + NADPH + PYR	ME2	FALSE	66.60	0.00	E. coli	1.1.1.40	
+MDHR	Malate dehydrogenase	mdh	MAL + NAD <-> NADH + OA	MDH	TRUE	728.73	525.00	All organisms	1.1.1.37	
+NDH	NADH dehydrogenase II	ndh	NADH + Q -> NAD + QH2	NADH5	FALSE	725.00	0.00	All organisms	1.6.99.3	
+NUOA	NADH dehydrogenase I	nuoA, nuoB, nuoE, nuoF, nuoG, nuoH, nuoI, nuoJ, nuoK, nuoL, nuoM, nuoN	NADH + Q -> NAD + QH2 +3.5 HEXT	NADH16pp	FALSE	0.40	0.00	E. coli	7.1.1.2	
+O2TXR	Oxygen transport		O2xt <-> O2		TRUE	diffusion	diffusion			
+PCKA	Phosphoenolpyruvate carboxykinase	pckA	OA + ATP -> PEP + CO2 + ADP	PPCK	FALSE	0.67	0.00	E. coli	14.1.1.49	
+PFKA	Phosphofructokinase	pfkA	F6P + ATP -> FDP + ADP	PFK	FALSE	83.60	0.00	E. coli	2.7.1.11	
+PFKB	Phosphofructokinase B	pfkB	F6P + ATP -> FDP + ADP	PFK	FALSE	83.60	0.00	E. coli	2.7.1.11	
+PFLA	Pyruvate formate lyase 1	pflA, pflB	PYR + COA -> ACCOA + FOR	PFL	FALSE	8.30	0.00	E. coli	2.3.1.54	
+PFLC	Pyruvate formate lyase 2	pflC, pflD	PYR + COA -> ACCOA + FOR	PFL	FALSE	8.30	0.00	E. coli	2.3.1.54	
+PGIR	Phosphoglucose isomerase	pgi	G6P <-> F6P	PGI	TRUE	42.00	1340.56	All organisms	5.3.1.9	
+PGKR	Phosphoglycerate kinase	pgk	PDG13 + ADP <-> PG3 + ATP	PGK	TRUE	529.80	2631.50	All organisms	2.7.2.3	
+PGL	6-Phosphogluconolactonase	pgl	D6PGL -> D6PGC	PGL	FALSE	kcat	0.00		3.1.1.31	
+PGMR	Phosphoglucomutase	pgm	G1P <-> G6P	PGMT	TRUE	93.00	kcat	All organisms	5.4.2.2	
+PIUP2R	Phosphate transport	pitA, pitB	PIxt + HEXT <-> PI	PIt2rpp	TRUE	kcat	kcat			
+PNTA1	Pyridine nucleotide transhydrogenase	pntA, pntB	NADPH + NAD -> NADP + NADH	THD2pp	FALSE	167.90	0.00	E. coli	1.6.1.1	
+PNTA2	Pyridine nucleotide transhydrogenase	pntA, pntB	NADP + NADH +2 HEXT -> NADPH + NAD	NADTRHD	FALSE	0.07	0.00	E. coli	1.6.1.1	
+PPA	Inorganic pyrophosphatase	ppa	PPI -> 2 PI	PPA	FALSE	76.00	0.00	E. coli	3.6.1.1	
+PPC	Phosphoenolpyruvate carboxylase	ppc	PEP + CO2 -> OA + PI	PPC	FALSE	540.00	0.00	E. coli	4.1.1.31	
+PPSA	Phosphoenolpyruvate synthase	ppsA	PYR + ATP -> PEP + AMP + PI	PPS	FALSE	1160.14	0.00	All organisms	2.7.9.2	
+PTAR	Phosphotransacetylase	pta	ACCOA + PI <-> ACTP + COA	PTAr	TRUE	1341.33	1419.47	All organisms	2.3.1.8	
+PYKA	Pyruvate Kinase II	pykA	PEP + ADP -> PYR + ATP	PYK	FALSE	135.64	0.00	E. coli	2.7.1.40	
+PYKF	Pyruvate Kinase I	pykF	PEP + ADP -> PYR + ATP	PYK	FALSE	135.64	0.00	E. coli	2.7.1.40	
+PYRUPR	Pyruvate transport		PYRxt + HEXT <-> PYR		TRUE	diffusion	diffusion			
+RBSK	Ribokinase	rbsK	RIB + ATP -> R5P + ADP	RBK	FALSE	10.30	0.00	All organisms	2.7.1.15	
+RIBUPR	Ribose transport	rbsA, rbsB, rbsC, rbsD	RIBxt + ATP -> RIB + ADP + PI	RIBabcpp	FALSE	kcat	0.00			
+RPER	Ribulose phosphate 3-epimerase	rpe	RL5P <-> X5P	RPE	TRUE	1180.01	1300.00	All organisms	5.1.3.1	
+RPIAR	Ribose-5-phosphate isomerase A	rpiA	RL5P <-> R5P	RPI	TRUE	2100.00	50.00	E. coli	5.3.1.6	
+RPIBR	Ribose-5-phosphate isomerase B	rpiB	RL5P <-> R5P	RPI	TRUE	2100.00	50.00	E. coli	5.3.1.6	
+SDHA1	Succinate dehydrogenase	sdhA, sdhB, sdhC, sdhD	SUCC + FAD -> FADH + FUM	SUCDi	FALSE	167.00	0.00	E. coli	1.3.5.1	
+SDHA2	Succinate dehydrogenase complex	sdhA, sdhB, sdhC, sdhD	FADH + Q <-> FAD + QH2	SUCDi	TRUE	37.90	kcat	E. coli	1.3.5.1	
+SFCA	Malic enzyme (NAD)	maeA	MAL + NAD -> CO2 + NADH + PYR	ME1	FALSE	134.40	0.00	E. coli	1.1.1.38	
+SUCA	2-Ketoglutarate dehyrogenase	sucA, sucB, lpdA	AKG + NAD + COA -> CO2 + NADH + SUCCOA	AKGDH	FALSE	49.00	0.00	E. coli	(Waskiewicz and Hammes, Biochemistry 1984)	
+SUCCR	Succinyl-CoA synthetase	sucC, sucD	SUCCOA + ADP + PI <-> ATP + COA + SUCC	SUCOAS	TRUE	25.67	21.00	All organisms	6.2.1.5	
+TALAR	Transaldolase A	talA	T3P1 + S7P <-> E4P + F6P	TALA	TRUE	13.00	5.67	E. coli	2.2.1.2	
+TALBR	Transaldolase B	talB	T3P1 + S7P <-> E4P + F6P	TALA	TRUE	13.00	5.67	E. coli	2.2.1.2	
+TKTA1R	Transketolase I	tktA	R5P + X5P <-> T3P1 + S7P	TKT1	TRUE	17.00	123.50	All organisms	2.2.1.1	
+TKTA2R	Transketolase I	tktA	X5P + E4P <-> F6P + T3P1	TKT2	TRUE	69.00	97.00	All organisms	2.2.1.1	
+TKTB1R	Transketolase II	tktB	R5P + X5P <-> T3P1 + S7P	TKT1	TRUE	17.00	123.50	All organisms	2.2.1.1	
+TKTB2R	Transketolase II	tktB	X5P + E4P <-> F6P + T3P1	TKT2	TRUE	69.00	97.00	All organisms	2.2.1.1	
+TPIAR	Triosphosphate Isomerase	tpiA	T3P1 <-> T3P2	TPI	TRUE	460.50	9000.00	All organisms	5.3.1.1	
+ZWFR	Glucose 6-phosphate-1-dehydrogenase	zwf	G6P + NADP <-> D6PGL + NADPH	G6PDH2r	TRUE	3472.94	0.17	All organisms	1.1.1.49	E. coli
+ASPT	L-aspartase	aspA	FUM <-> Z	ASPT	TRUE	180.00	kcat	E. coli	4.3.1.1	

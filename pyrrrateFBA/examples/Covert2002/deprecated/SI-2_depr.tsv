@@ -1,0 +1,78 @@
+id	name
+PDG13	1,3-bis-Phosphoglycerate
+E4P	Erythrose 4-phosphate
+HEXT	External H+
+PYRxt	External pyruvate
+PG2	2-Phosphoglycerate
+ETH	Ethanol
+ICIT	Isocitrate
+Q	Ubiquinone
+PG3	3-Phosphoglycerate
+ETHxt	External ethanol
+LAC	D-Lactate
+QH2	Ubiquinol
+AC	Acetate
+F6P	Fructose 6-phosphate
+LACxt	External lactate
+R5P	Ribose 5-phosphate
+ACCOA	Acetyl-CoA
+FAD	Flavin adenine dinucleotide
+LCTS	Lactose
+RIB	Ribose
+ACTP	Acetyl-phosphate
+FADH	Flavin adenine dinucleotide reduced
+LCTSxt	External Lactose
+RIBxt	External ribose
+ACxt	External acetate
+FDP	Fructose 1,6-diphosphate
+MAL	Malate
+RL5P	Ribulose 5-phosphate
+ADP	Adenosine diphosphate
+FOR	Formate
+NAD	Nicotinamide adenine dinucleotide
+S7P	sedo-Heptulose
+AKG	a-Ketoglutarate
+FORxt	External Formate
+NADH	Nicotinamide adenine dinucleotide reduced
+SUCC	Succinate
+AMP	Adenosine monophosphate
+FUM	Fumarate
+NADP	Nicotinamide adenine dinucleotide phosphate
+SUCCOA	Succinate CoA
+ATP	Adenosine triphosphate
+G1P	Glucose 1-phosphate
+NADPH	Dihydronicotinamide adenine dinucleotide phosphate reduced
+SUCCxt	External succinate
+bDGLAC	b-D-Galactose
+G6P	Glucose 6-phosphate
+O2	Oxygen
+T3P1	Glyceraldehyde 3-phosphate
+bDGLC	b-D-Glucose
+GAL1P	Galactose 1-Phosphate
+O2xt	External Oxygen
+T3P2	Dihydroxyacetone phosphate
+Biomass	Cell biomass
+GL	Glycerol
+OA	Oxaloacetate
+UDPG	UDP Glucose
+CIT	Citrate
+GL3P	Glycerol 3-phosphate
+PEP	Phosphoenolpyruvate
+UDPGAL	UDP Galactose
+CO2	Carbon dioxide
+GLAC	Galactose
+PG	Phosphatidyl glycerol
+UTP	Uridine triphosphate
+CO2xt	External carbon dioxide
+GLC	a-D-Glucose
+PI	Phosphate (inorganic)
+X5P	Xylulose-5-phosphate
+COA	Coenzyme A
+GLCxt	External glucose
+PIxt	External phosphate
+D6PGC	D-6-Phosphate-gluconate
+GLX	Glyoxylate
+PPI	Pyrophosphate
+D6PGL	D-6-Phosphate-glucono-delta-lactone
+GLxt	External glycerol
+PYR	Pyruvate

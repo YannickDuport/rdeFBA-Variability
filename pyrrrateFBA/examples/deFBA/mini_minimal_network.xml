@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" fbc:required="false"> fbc:strict="false">
+<model id="mini_minimal_network_exponential_decay" name="mini_minimal_network_exponential_decay" fbc:strict="false">
+
+<listOfCompartments>
+  <compartment id="cytosol" constant="true"/>
+</listOfCompartments>
+
+<listOfSpecies>
+<species id="P" name="protein" compartment="cytosol" initialAmount="1.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="1.0" ram:objectiveWeight="1.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+</listOfSpecies>
+<listOfReactions>
+    <reaction id="DEGRADATION" reversible="false" >
+      <annotation>
+        <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+          <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="" ram:maintenanceScaling="0.0"/>
+        </ram:RAM>
+      </annotation>
+      <listOfReactants>
+        <speciesReference species="P" stoichiometry="0.1" constant="true"/>
+      </listOfReactants>
+    </reaction>
+</listOfReactions>
+</model>
+</sbml>

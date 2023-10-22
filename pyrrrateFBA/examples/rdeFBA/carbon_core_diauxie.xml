@@ -1,0 +1,1902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2" xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1" qual:required="true" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" fbc:required="false"> fbc:strict="false">
+<model id="carbon_core_diauxie" name="carbon_core_diauxie" fbc:strict="false">
+
+<listOfCompartments>
+  <compartment id="extracellular" constant="true"/>
+  <compartment id="cytosol" constant="true"/>
+</listOfCompartments>
+
+<listOfSpecies>
+<species id="Carbon1" name="Carbon1" compartment="extracellular" initialAmount="500.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="extracellular"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="Carbon2" name="Carbon2" compartment="extracellular" initialAmount="1000.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="extracellular"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="O2ext" name="external Oxygen" compartment="extracellular" initialAmount="1000000.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="extracellular"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="Dext" name="external D" compartment="extracellular" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="extracellular"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="Eext" name="external E" compartment="extracellular" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="extracellular"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="Fext" name="external F" compartment="extracellular" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="extracellular"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="Hext" name="external H" compartment="extracellular" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="extracellular"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="A" name="A" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="B" name="B" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="C" name="C" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="D" name="D" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E" name="E" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="F" name="F" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="G" name="G" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="H" name="H" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="NADH" name="NADH" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="ATP" name="ATP" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="O2" name="Oxygen" compartment="cytosol" initialAmount="0.0" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="0.0" ram:objectiveWeight="0.0" ram:biomassPercentage="0.0" ram:speciesType="metabolite"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_Tc2" name="E_Tc2" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="150.0" ram:objectiveWeight="150.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R2a" name="E_R2a" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="50.0" ram:objectiveWeight="50.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R5a" name="E_R5a" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="50.0" ram:objectiveWeight="50.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R5b" name="E_R5b" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="50.0" ram:objectiveWeight="50.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R7" name="E_R7" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="100.0" ram:objectiveWeight="100.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R8a" name="E_R8a" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="400.0" ram:objectiveWeight="400.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_Rres" name="E_Rres" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="50.0" ram:objectiveWeight="50.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_Tc1" name="E_Tc1" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="40.0" ram:objectiveWeight="40.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_Tf" name="E_Tf" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="40.0" ram:objectiveWeight="40.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_Th" name="E_Th" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="40.0" ram:objectiveWeight="40.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R1" name="E_R1" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="50.0" ram:objectiveWeight="50.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R2b" name="E_R2b" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="50.0" ram:objectiveWeight="50.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R3" name="E_R3" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="200.0" ram:objectiveWeight="200.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R4" name="E_R4" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="50.0" ram:objectiveWeight="50.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R6" name="E_R6" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="100.0" ram:objectiveWeight="100.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_R8b" name="E_R8b" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="400.0" ram:objectiveWeight="400.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="E_Q" name="E_Q" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="50.0" ram:objectiveWeight="50.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="R" name="Ribosome" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="600.0" ram:objectiveWeight="600.0" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="RPc1" name="Regulatory Protein c1" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="30" ram:objectiveWeight="30" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="RPO2" name="Regulatory Protein O2" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="30" ram:objectiveWeight="30" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="RPb" name="Regulatory Protein b" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="30" ram:objectiveWeight="30" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="RPh" name="Regulatory Protein h" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="30" ram:objectiveWeight="30" ram:biomassPercentage="0.0" ram:speciesType="enzyme"/>
+    </ram:RAM>
+  </annotation>
+</species>
+<species id="Q" compartment="cytosol" initialAmount="NaN" constant="false" boundaryCondition="false" hasOnlySubstanceUnits="true">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:species ram:molecularWeight="75.0" ram:objectiveWeight="75.0" ram:biomassPercentage="0.35" ram:speciesType="quota"/>
+    </ram:RAM>
+  </annotation>
+</species>
+</listOfSpecies>
+<listOfReactions>
+<reaction id="R1" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R1">
+    <fbc:geneProductRef fbc:geneProduct="E_R1"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="A" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="B" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R2a" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R2a">
+    <fbc:geneProductRef fbc:geneProduct="E_R2a"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="B" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="C" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2.0" constant="true"/>
+    <speciesReference species="NADH" stoichiometry="2.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R2b" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R2b">
+    <fbc:geneProductRef fbc:geneProduct="E_R2b"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="C" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2.0" constant="true"/>
+    <speciesReference species="NADH" stoichiometry="2.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="B" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R6" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R6">
+    <fbc:geneProductRef fbc:geneProduct="E_R6"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="C" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="ATP" stoichiometry="2.0" constant="true"/>
+    <speciesReference species="D" stoichiometry="3.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R7" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R7">
+    <fbc:geneProductRef fbc:geneProduct="E_R7"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="C" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="NADH" stoichiometry="4.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E" stoichiometry="3.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R3" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R3">
+    <fbc:geneProductRef fbc:geneProduct="E_R3"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="B" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="F" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R4" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R4">
+    <fbc:geneProductRef fbc:geneProduct="E_R4"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="C" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="G" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R8a" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R8a">
+    <fbc:geneProductRef fbc:geneProduct="E_R8a"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="G" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="NADH" stoichiometry="2.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R8b" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R8b">
+    <fbc:geneProductRef fbc:geneProduct="E_R8b"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="G" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="NADH" stoichiometry="2.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R5a" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R5a">
+    <fbc:geneProductRef fbc:geneProduct="E_R5a"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="G" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="C" stoichiometry="0.8" constant="true"/>
+    <speciesReference species="NADH" stoichiometry="2.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="R5b" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_R5b">
+    <fbc:geneProductRef fbc:geneProduct="E_R5b"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="G" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="C" stoichiometry="0.8" constant="true"/>
+    <speciesReference species="NADH" stoichiometry="2.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="Rres" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1800.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_Rres">
+    <fbc:geneProductRef fbc:geneProduct="E_Rres"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="O2" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="NADH" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="ATP" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="Tc1" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="3000.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_Tc1">
+    <fbc:geneProductRef fbc:geneProduct="E_Tc1"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="Carbon1" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="A" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="Tc2" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2000.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_Tc2">
+    <fbc:geneProductRef fbc:geneProduct="E_Tc2"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="Carbon2" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="A" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="Tf" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="3000.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_Tf">
+    <fbc:geneProductRef fbc:geneProduct="E_Tf"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="Fext" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="F" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="Th" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="3000.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_Th">
+    <fbc:geneProductRef fbc:geneProduct="E_Th"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="Hext" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="TO2" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1000.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="Q">
+    <fbc:geneProductRef fbc:geneProduct="Q"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="O2ext" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="O2" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="Td" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1000.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="Q">
+    <fbc:geneProductRef fbc:geneProduct="Q"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="D" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="Dext" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="Te" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1000.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="Q">
+    <fbc:geneProductRef fbc:geneProduct="Q"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="E" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="Eext" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="Synth_Q" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="3.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="E_Q">
+    <fbc:geneProductRef fbc:geneProduct="E_Q"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="250.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1500.0" constant="true"/>
+    <speciesReference species="C" stoichiometry="250.0" constant="true"/>
+    <speciesReference species="F" stoichiometry="250.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="Q" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_Tc1" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.5" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="400.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1600.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_Tc1" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_Tc2" reversible="false" fbc:lowerFluxBound="fbc_vE_Tc2_fwd_lower" fbc:upperFluxBound="fbc_vE_Tc2_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="0.67" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="1500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="6000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_Tc2" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_Tf" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.5" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="400.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1600.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_Tf" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_Th" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.5" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="400.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1600.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_Th" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R1" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R1" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R2a" reversible="false" fbc:lowerFluxBound="fbc_vE_R2a_fwd_lower" fbc:upperFluxBound="fbc_vE_R2a_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R2a" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R2b" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R2b" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R6" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="1000.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="4000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R6" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R7" reversible="false" fbc:lowerFluxBound="fbc_vE_R7_fwd_lower" fbc:upperFluxBound="fbc_vE_R7_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="1.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="1000.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="4000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R7" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R3" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="0.5" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="2000.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="8000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R3" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R4" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R4" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R8a" reversible="false" fbc:lowerFluxBound="fbc_vE_R8a_fwd_lower" fbc:upperFluxBound="fbc_vE_R8a_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="0.25" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="4000.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="16000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R8a" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R8b" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="0.25" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="4000.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="16000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R8b" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R5a" reversible="false" fbc:lowerFluxBound="fbc_vE_R5a_fwd_lower" fbc:upperFluxBound="fbc_vE_R5a_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R5a" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_R5b" reversible="false" fbc:lowerFluxBound="fbc_vE_R5b_fwd_lower" fbc:upperFluxBound="fbc_vE_R5b_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_R5b" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_Rres" reversible="false" fbc:lowerFluxBound="fbc_vE_Rres_fwd_lower" fbc:upperFluxBound="fbc_vE_Rres_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_Rres" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vE_Q" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="2.0" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="2000.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="E_Q" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vR" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="0.2" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="4500.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="18000.0" constant="true"/>
+    <speciesReference species="C" stoichiometry="1500.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="R" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vRPO2" reversible="false" fbc:lowerFluxBound="fbc_vRPO2_fwd_lower" fbc:upperFluxBound="fbc_vRPO2_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="3.33" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="300.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1200.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="RPO2" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vRPc1" reversible="false" fbc:lowerFluxBound="fbc_vRPc1_fwd_lower" fbc:upperFluxBound="fbc_vRPc1_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="3.33" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="300.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1200.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="RPc1" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vRPh" reversible="false" fbc:lowerFluxBound="fbc_vRPh_fwd_lower" fbc:upperFluxBound="fbc_vRPh_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="3.33" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="300.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1200.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="RPh" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="vRPb" reversible="false" fbc:lowerFluxBound="fbc_vRPb_fwd_lower" fbc:upperFluxBound="fbc_vRPb_fwd">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="3.33" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <fbc:geneProductAssociation fbc:id="R">
+    <fbc:geneProductRef fbc:geneProduct="R"/>
+  </fbc:geneProductAssociation>
+  <listOfReactants>
+    <speciesReference species="H" stoichiometry="300.0" constant="true"/>
+    <speciesReference species="ATP" stoichiometry="1200.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="RPb" stoichiometry="1.0" constant="true"/>
+  </listOfProducts>
+</reaction>
+<reaction id="kdE_Tc1" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_Tc1" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_Tc2" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_Tc2" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_Tf" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_Tf" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_Th" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_Th" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R1" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R1" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R2a" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R2a" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R2b" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R2b" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R6" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R6" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R7" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R7" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R3" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R3" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R4" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R4" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R8a" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R8a" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R8b" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R8b" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R5a" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R5a" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_R5b" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_R5b" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_Rres" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_Rres" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdE_Q" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="E_Q" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdR" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="R" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdRPO2" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="RPO2" stoichiometry="0.5" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdRPc1" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="RPc1" stoichiometry="0.5" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdRPh" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="RPh" stoichiometry="0.5" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdRPb" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="RPb" stoichiometry="0.5" constant="true"/>
+  </listOfReactants>
+</reaction>
+<reaction id="kdQ" reversible="false">
+  <annotation>
+    <ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+      <ram:reaction ram:kcatForward="NaN" ram:kcatBackward="0.0" ram:maintenanceScaling="0.0"/>
+    </ram:RAM>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="Q" stoichiometry="0.01" constant="true"/>
+  </listOfReactants>
+</reaction>
+</listOfReactions>
+
+<fbc:listOfGeneProducts>
+  <fbc:geneProduct fbc:id="E_Tc2" fbc:label="G_E_Tc2" fbc:associatedSpecies="E_Tc2"/>
+  <fbc:geneProduct fbc:id="E_R2a" fbc:label="G_E_R2a" fbc:associatedSpecies="E_R2a"/>
+  <fbc:geneProduct fbc:id="E_R5a" fbc:label="G_E_R5a" fbc:associatedSpecies="E_R5a"/>
+  <fbc:geneProduct fbc:id="E_R5b" fbc:label="G_E_R5b" fbc:associatedSpecies="E_R5b"/>
+  <fbc:geneProduct fbc:id="E_R7" fbc:label="G_E_R7" fbc:associatedSpecies="E_R7"/>
+  <fbc:geneProduct fbc:id="E_R8a" fbc:label="G_E_R8a" fbc:associatedSpecies="E_R8a"/>
+  <fbc:geneProduct fbc:id="E_Rres" fbc:label="G_E_Rres" fbc:associatedSpecies="E_Rres"/>
+  <fbc:geneProduct fbc:id="E_Tc1" fbc:label="G_E_Tc1" fbc:associatedSpecies="E_Tc1"/>
+  <fbc:geneProduct fbc:id="E_Tf" fbc:label="G_E_Tf" fbc:associatedSpecies="E_Tf"/>
+  <fbc:geneProduct fbc:id="E_Th" fbc:label="G_E_Th" fbc:associatedSpecies="E_Th"/>
+  <fbc:geneProduct fbc:id="E_R1" fbc:label="G_E_R1" fbc:associatedSpecies="E_R1"/>
+  <fbc:geneProduct fbc:id="E_R2b" fbc:label="G_E_R2b" fbc:associatedSpecies="E_R2b"/>
+  <fbc:geneProduct fbc:id="E_R3" fbc:label="G_E_R3" fbc:associatedSpecies="E_R3"/>
+  <fbc:geneProduct fbc:id="E_R4" fbc:label="G_E_R4" fbc:associatedSpecies="E_R4"/>
+  <fbc:geneProduct fbc:id="E_R6" fbc:label="G_E_R6" fbc:associatedSpecies="E_R6"/>
+  <fbc:geneProduct fbc:id="E_R8b" fbc:label="G_E_R8b" fbc:associatedSpecies="E_R8b"/>
+  <fbc:geneProduct fbc:id="E_Q" fbc:label="G_E_Q" fbc:associatedSpecies="E_Q"/>
+  <fbc:geneProduct fbc:id="R" fbc:label="G_R" fbc:associatedSpecies="R"/>
+  <fbc:geneProduct fbc:id="Q" fbc:label="G_Q" fbc:associatedSpecies="Q"/>
+  <fbc:geneProduct fbc:id="RPc1" fbc:label="G_RPc1" fbc:associatedSpecies="RPc1"/>
+  <fbc:geneProduct fbc:id="RPO2" fbc:label="G_RPO2" fbc:associatedSpecies="RPO2"/>
+  <fbc:geneProduct fbc:id="RPb" fbc:label="G_RPb" fbc:associatedSpecies="RPb"/>
+  <fbc:geneProduct fbc:id="RPh" fbc:label="G_RPh" fbc:associatedSpecies="RPh"/>
+</fbc:listOfGeneProducts>
+
+<qual:listOfQualitativeSpecies>
+  <qual:qualitativeSpecies qual:id="RPO2bar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="RPc1bar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="RPhbar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="RPbbar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="Tc2bar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="R2abar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="R7bar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="R8abar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="R5abar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="R5bbar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+  <qual:qualitativeSpecies qual:id="Rresbar" qual:initialLevel="1" qual:maxLevel="1" qual:compartment="cytosol" qual:constant="false"/>
+</qual:listOfQualitativeSpecies>
+
+<listOfRules>
+  <assignmentRule variable="fbc_vE_Tc2_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_Tc2bar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_Tc2_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_E</ci>
+        <ci>qual_con_Tc2bar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R2a_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_R2abar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R2a_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_E</ci>
+        <ci>qual_con_R2abar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R7_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_R7bar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R7_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_E</ci>
+        <ci>qual_con_R7bar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R8a_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_R8abar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R8a_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_E</ci>
+        <ci>qual_con_R8abar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R5a_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_R5abar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R5a_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_E</ci>
+        <ci>qual_con_R5abar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R5b_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_R5bbar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_R5b_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_E</ci>
+        <ci>qual_con_R5bbar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_Rres_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_Rresbar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vE_Rres_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_E</ci>
+        <ci>qual_con_Rresbar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vRPO2_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_RPO2bar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vRPO2_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_RP</ci>
+        <ci>qual_con_RPO2bar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vRPc1_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_RPc1bar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vRPc1_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_RP</ci>
+        <ci>qual_con_RPc1bar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vRPh_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_RPhbar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vRPh_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_RP</ci>
+        <ci>qual_con_RPhbar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vRPb_fwd">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>NaN</ci>
+        <ci>qual_con_RPbbar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+  <assignmentRule variable="fbc_vRPb_fwd_lower">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <times/>
+        <ci>e_RP</ci>
+        <ci>qual_con_RPbbar</ci>
+      </apply>
+    </math>
+  </assignmentRule>
+<assignmentRule variable="RPO2bar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_RPO2bar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="RPc1bar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_RPc1bar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="RPhbar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_RPhbar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="RPbbar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_RPbbar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="Tc2bar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_Tc2bar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="R2abar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_R2abar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="R7bar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_R7bar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="R8abar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_R8abar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="R5abar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_R5abar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="R5bbar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_R5bbar</ci>
+  </math>
+</assignmentRule>
+<assignmentRule variable="Rresbar">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <ci>qual_con_Rresbar</ci>
+  </math>
+</assignmentRule>
+</listOfRules>
+
+<listOfEvents>
+<event id="low_RPc1" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <lt/>
+        <ci>RPc1</ci>
+        <ci>theta_RP</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_Tc2bar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="high_RPc1" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <geq/>
+        <ci>RPc1</ci>
+        <ci>theta_RP</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_Tc2bar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="low_RPb" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <lt/>
+        <ci>RPb</ci>
+        <ci>theta_RP</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_R2abar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+    <eventAssignment variable="qual_con_R7bar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="high_RPb" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <geq/>
+        <ci>RPb</ci>
+        <ci>theta_RP</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_R2abar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+    <eventAssignment variable="qual_con_R7bar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="low_RPh" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <lt/>
+        <ci>RPh</ci>
+        <ci>theta_RP</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_R8abar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="high_RPh" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <geq/>
+        <ci>RPh</ci>
+        <ci>theta_RP</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_R8abar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="low_RPO2" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <lt/>
+        <ci>RPO2</ci>
+        <ci>theta_RP</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_R5abar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+    <eventAssignment variable="qual_con_R5bbar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+    <eventAssignment variable="qual_con_Rresbar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="high_RPO2" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <geq/>
+        <ci>RPO2</ci>
+        <ci>theta_RP</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_R5abar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+    <eventAssignment variable="qual_con_R5bbar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+    <eventAssignment variable="qual_con_Rresbar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="low_O2" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <lt/>
+        <ci>O2ext</ci>
+        <ci>theta_Y</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_RPO2bar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="high_O2" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <geq/>
+        <ci>O2ext</ci>
+        <ci>theta_Y</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_RPO2bar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="high_C1" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <geq/>
+        <ci>Carbon1</ci>
+        <ci>theta_Y</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_RPc1bar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="low_C1" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <lt/>
+        <ci>Carbon1</ci>
+        <ci>theta_Y</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_RPc1bar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="high_vTh" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <geq/>
+        <ci>Th</ci>
+        <ci>theta_v</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_RPhbar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="low_vTh" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <lt/>
+        <ci>Th</ci>
+        <ci>theta_v</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_RPhbar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="high_vR2b" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <geq/>
+        <ci>R2b</ci>
+        <ci>theta_v</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_RPbbar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">1</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+<event id="low_vR2b" useValuesFromTriggerTime="true">
+  <trigger persistent="true" initialValue="true">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <lt/>
+        <ci>R2b</ci>
+        <ci>theta_v</ci>
+      </apply>
+    </math>
+  </trigger>
+  <listOfEventAssignments>
+    <eventAssignment variable="qual_con_RPbbar">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <cn type="integer">0</cn>
+      </math>
+    </eventAssignment>
+  </listOfEventAssignments>
+</event>
+</listOfEvents>
+
+<listOfParameters>
+  <parameter id="theta_RP" constant="true" value="0.001"/>
+  <parameter id="theta_Y" constant="true" value="1.0"/>
+  <parameter id="theta_v" constant="true" value="0.1"/>
+  <parameter id="e_RP" constant="true" value="0.001"/>
+  <parameter id="e_E" constant="true" value="1e-06"/>
+  <parameter id="fbc_vE_Tc2_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vE_Tc2_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R2a_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R2a_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R7_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R7_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R8a_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R8a_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R5a_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R5a_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R5b_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vE_R5b_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vE_Rres_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vE_Rres_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vRPO2_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vRPO2_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vRPc1_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vRPc1_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vRPh_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vRPh_fwd_lower" value="NaN" constant="false" />
+  <parameter id="fbc_vRPb_fwd" value="NaN" constant="false" />
+  <parameter id="fbc_vRPb_fwd_lower" value="NaN" constant="false" />
+  <parameter id="qual_con_RPO2bar" constant="false" value="NaN"/>
+  <parameter id="qual_con_RPc1bar" constant="false" value="NaN"/>
+  <parameter id="qual_con_RPhbar" constant="false" value="NaN"/>
+  <parameter id="qual_con_RPbbar" constant="false" value="NaN"/>
+  <parameter id="qual_con_Tc2bar" constant="false" value="NaN"/>
+  <parameter id="qual_con_R2abar" constant="false" value="NaN"/>
+  <parameter id="qual_con_R7bar" constant="false" value="NaN"/>
+  <parameter id="qual_con_R8abar" constant="false" value="NaN"/>
+  <parameter id="qual_con_R5abar" constant="false" value="NaN"/>
+  <parameter id="qual_con_R5bbar" constant="false" value="NaN"/>
+  <parameter id="qual_con_Rresbar" constant="false" value="NaN"/>
+</listOfParameters>
+</model>
+</sbml>

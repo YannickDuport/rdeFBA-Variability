@@ -1,0 +1,204 @@
+yourlist	Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+rplB	P60422	RL2_ECOLI	reviewed	50S ribosomal protein L2 (Large ribosomal subunit protein uL2)	rplB b3317 JW3279	Escherichia coli (strain K12)	273
+rplR	P0C018	RL18_ECOLI	reviewed	50S ribosomal protein L18 (Large ribosomal subunit protein uL18)	rplR b3304 JW3266	Escherichia coli (strain K12)	117
+rpsQ	P0AG63	RS17_ECOLI	reviewed	30S ribosomal protein S17 (Small ribosomal subunit protein uS17)	rpsQ neaA b3311 JW3273	Escherichia coli (strain K12)	84
+iclR	P16528	ICLR_ECOLI	reviewed	Transcriptional repressor IclR (Acetate operon repressor)	iclR b4018 JW3978	Escherichia coli (strain K12)	274
+rplF	P0AG55	RL6_ECOLI	reviewed	50S ribosomal protein L6 (Large ribosomal subunit protein uL6)	rplF b3305 JW3267	Escherichia coli (strain K12)	177
+nuoN	P0AFF0	NUON_ECOLI	reviewed	NADH-quinone oxidoreductase subunit N (EC 7.1.1.-) (NADH dehydrogenase I subunit N) (NDH-1 subunit N) (NUO14)	nuoN b2276 JW2271	Escherichia coli (strain K12)	485
+crp	P0ACJ8	CRP_ECOLI	reviewed	cAMP-activated global transcriptional regulator CRP (Catabolite activator protein) (CAP) (Catabolite gene activator) (cAMP receptor protein) (CRP) (cAMP regulatory protein)	crp cap csm b3357 JW5702	Escherichia coli (strain K12)	210
+pflD	P32674	GRE1_ECOLI	reviewed	Probable dehydratase PflD (EC 4.2.1.-)	pflD yijL b3951 JW3923	Escherichia coli (strain K12)	765
+glpA	P0A9C0	GLPA_ECOLI	reviewed	Anaerobic glycerol-3-phosphate dehydrogenase subunit A (G-3-P dehydrogenase) (EC 1.1.5.3)	glpA b2241 JW2235	Escherichia coli (strain K12)	542
+fumC	P05042	FUMC_ECOLI	reviewed	Fumarate hydratase class II (Fumarase C) (EC 4.2.1.2) (Aerobic fumarase) (Iron-independent fumarase)	fumC b1611 JW1603	Escherichia coli (strain K12)	467
+aceF	P06959	ODP2_ECOLI	reviewed	Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex (EC 2.3.1.12) (Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex) (E2)	aceF b0115 JW0111	Escherichia coli (strain K12)	630
+mlc	P50456	MLC_ECOLI	reviewed	Protein mlc (Making large colonies protein)	mlc b1594 JW1586	Escherichia coli (strain K12)	406
+sdhD	P0AC44	DHSD_ECOLI	reviewed	Succinate dehydrogenase hydrophobic membrane anchor subunit	sdhD b0722 JW0712	Escherichia coli (strain K12)	115
+glpF	P0AER0	GLPF_ECOLI	reviewed	Glycerol uptake facilitator protein (Aquaglyceroporin)	glpF b3927 JW3898	Escherichia coli (strain K12)	281
+rplS	P0A7K6	RL19_ECOLI	reviewed	50S ribosomal protein L19 (Large ribosomal subunit protein bL19)	rplS b2606 JW2587	Escherichia coli (strain K12)	115
+acnB	P36683	ACNB_ECOLI	reviewed	Aconitate hydratase B (ACN) (Aconitase) (EC 4.2.1.3) ((2R,3S)-2-methylisocitrate dehydratase) ((2S,3R)-3-hydroxybutane-1,2,3-tricarboxylate dehydratase) (2-methyl-cis-aconitate hydratase) (EC 4.2.1.99) (Iron-responsive protein-like) (IRP-like) (RNA-binding protein)	acnB yacI yacJ b0118 JW0114	Escherichia coli (strain K12)	865
+rpmB	P0A7M2	RL28_ECOLI	reviewed	50S ribosomal protein L28 (Large ribosomal subunit protein bL28)	rpmB b3637 JW3612	Escherichia coli (strain K12)	78
+atpE	P68699	ATPL_ECOLI	reviewed	ATP synthase subunit c (ATP synthase F(0) sector subunit c) (Dicyclohexylcarbodiimide-binding protein) (F-type ATPase subunit c) (F-ATPase subunit c) (Lipid-binding protein)	atpE papH uncE b3737 JW3715	Escherichia coli (strain K12)	79
+rplU	P0AG48	RL21_ECOLI	reviewed	50S ribosomal protein L21 (Large ribosomal subunit protein bL21)	rplU b3186 JW3153	Escherichia coli (strain K12)	103
+rpsD	P0A7V8	RS4_ECOLI	reviewed	30S ribosomal protein S4 (Small ribosomal subunit protein uS4)	rpsD ramA b3296 JW3258	Escherichia coli (strain K12)	206
+sucA	P0AFG3	ODO1_ECOLI	reviewed	2-oxoglutarate dehydrogenase E1 component (EC 1.2.4.2) (Alpha-ketoglutarate dehydrogenase)	sucA b0726 JW0715	Escherichia coli (strain K12)	933
+rpsH	P0A7W7	RS8_ECOLI	reviewed	30S ribosomal protein S8 (Small ribosomal subunit protein uS8)	rpsH b3306 JW3268	Escherichia coli (strain K12)	130
+rplK	P0A7J7	RL11_ECOLI	reviewed	50S ribosomal protein L11 (Large ribosomal subunit protein uL11)	rplK relC b3983 JW3946	Escherichia coli (strain K12)	142
+rpsJ	P0A7R5	RS10_ECOLI	reviewed	30S ribosomal protein S10 (Small ribosomal subunit protein uS10)	rpsJ nusE b3321 JW3283	Escherichia coli (strain K12)	103
+pfkB	P06999	PFKB_ECOLI	reviewed	ATP-dependent 6-phosphofructokinase isozyme 2 (ATP-PFK 2) (Phosphofructokinase 2) (EC 2.7.1.11) (6-phosphofructokinase isozyme II) (Phosphohexokinase 2)	pfkB b1723 JW5280	Escherichia coli (strain K12)	309
+galE	P09147	GALE_ECOLI	reviewed	UDP-glucose 4-epimerase (EC 5.1.3.2) (Galactowaldenase) (UDP-galactose 4-epimerase)	galE galD b0759 JW0742	Escherichia coli (strain K12)	338
+pitB	P43676	PITB_ECOLI	reviewed	Probable low-affinity inorganic phosphate transporter 2	pitB b2987 JW2955	Escherichia coli (strain K12)	499
+aspA	P0AC38	ASPA_ECOLI	reviewed	Aspartate ammonia-lyase (Aspartase) (EC 4.3.1.1)	aspA b4139 JW4099	Escherichia coli (strain K12)	478
+rplN	P0ADY3	RL14_ECOLI	reviewed	50S ribosomal protein L14 (Large ribosomal subunit protein uL14)	rplN b3310 JW3272	Escherichia coli (strain K12)	123
+pitA	P0AFJ7	PITA_ECOLI	reviewed	Low-affinity inorganic phosphate transporter 1	pitA pit b3493 JW3460	Escherichia coli (strain K12)	499
+nuoL	P33607	NUOL_ECOLI	reviewed	NADH-quinone oxidoreductase subunit L (EC 7.1.1.-) (NADH dehydrogenase I subunit L) (NDH-1 subunit L) (NUO12)	nuoL b2278 JW2273	Escherichia coli (strain K12)	613
+lacY	P02920	LACY_ECOLI	reviewed	Lactose permease (Lactose-proton symport)	lacY b0343 JW0334	Escherichia coli (strain K12)	417
+nuoM	P0AFE8	NUOM_ECOLI	reviewed	NADH-quinone oxidoreductase subunit M (EC 7.1.1.-) (NADH dehydrogenase I subunit M) (NDH-1 subunit M) (NUO13)	nuoM b2277 JW2272	Escherichia coli (strain K12)	509
+ptsI	P08839	PT1_ECOLI	reviewed	Phosphoenolpyruvate-protein phosphotransferase (EC 2.7.3.9) (Phosphotransferase system, enzyme I)	ptsI b2416 JW2409	Escherichia coli (strain K12)	575
+rpsK	P0A7R9	RS11_ECOLI	reviewed	30S ribosomal protein S11 (Small ribosomal subunit protein uS11)	rpsK b3297 JW3259	Escherichia coli (strain K12)	129
+rplC	P60438	RL3_ECOLI	reviewed	50S ribosomal protein L3 (Large ribosomal subunit protein uL3)	rplC b3320 JW3282	Escherichia coli (strain K12)	209
+maeB	P76558	MAO2_ECOLI	reviewed	NADP-dependent malic enzyme (NADP-ME) (EC 1.1.1.40)	maeB ypfF b2463 JW2447	Escherichia coli (strain K12)	759
+sdhA	P0AC41	SDHA_ECOLI	reviewed	Succinate dehydrogenase flavoprotein subunit (EC 1.3.5.1)	sdhA b0723 JW0713	Escherichia coli (strain K12)	588
+rpsU	P68679	RS21_ECOLI	reviewed	30S ribosomal protein S21 (Small ribosomal subunit protein bS21)	rpsU b3065 JW3037	Escherichia coli (strain K12)	71
+dld	P06149	DLD_ECOLI	reviewed	Quinone-dependent D-lactate dehydrogenase (EC 1.1.5.12) ((R)-lactate:quinone 2-oxidoreductase) (D-lactate dehydrogenase) (D-LDH) (Respiratory D-lactate dehydrogenase)	dld b2133 JW2121	Escherichia coli (strain K12)	571
+fdnI	P0AEK7	FDNI_ECOLI	reviewed	Formate dehydrogenase, nitrate-inducible, cytochrome b556(Fdn) subunit (Anaerobic formate dehydrogenase cytochrome b556 subunit) (Formate dehydrogenase-N subunit gamma) (FDH-N subunit gamma)	fdnI b1476 JW1472	Escherichia coli (strain K12)	217
+galK	P0A6T3	GAL1_ECOLI	reviewed	Galactokinase (EC 2.7.1.6) (Galactose kinase)	galK galA b0757 JW0740	Escherichia coli (strain K12)	382
+pflB	P09373	PFLB_ECOLI	reviewed	Formate acetyltransferase 1 (EC 2.3.1.54) (Pyruvate formate-lyase 1)	pflB pfl b0903 JW0886	Escherichia coli (strain K12)	760
+rplQ	P0AG44	RL17_ECOLI	reviewed	50S ribosomal protein L17 (Large ribosomal subunit protein bL17)	rplQ b3294 JW3256	Escherichia coli (strain K12)	127
+rbsK	P0A9J6	RBSK_ECOLI	reviewed	Ribokinase (RK) (EC 2.7.1.15)	rbsK b3752 JW3731	Escherichia coli (strain K12)	309
+pntA	P07001	PNTA_ECOLI	reviewed	NAD(P) transhydrogenase subunit alpha (EC 7.1.1.1) (Nicotinamide nucleotide transhydrogenase subunit alpha) (Pyridine nucleotide transhydrogenase subunit alpha)	pntA b1603 JW1595	Escherichia coli (strain K12)	510
+glpC	P0A996	GLPC_ECOLI	reviewed	Anaerobic glycerol-3-phosphate dehydrogenase subunit C (G-3-P dehydrogenase)	glpC b2243 JW2237	Escherichia coli (strain K12)	396
+galS	P25748	GALS_ECOLI	reviewed	HTH-type transcriptional regulator GalS (Mgl repressor and galactose ultrainduction factor)	galS b2151 JW2138	Escherichia coli (strain K12)	346
+nuoG	P33602	NUOG_ECOLI	reviewed	NADH-quinone oxidoreductase subunit G (EC 7.1.1.-) (NADH dehydrogenase I subunit G) (NDH-1 subunit G) (NUO7)	nuoG b2283 JW2278	Escherichia coli (strain K12)	908
+rpsO	P0ADZ4	RS15_ECOLI	reviewed	30S ribosomal protein S15 (Small ribosomal subunit protein uS15)	rpsO secC b3165 JW3134	Escherichia coli (strain K12)	89
+cra	P0ACP1	CRA_ECOLI	reviewed	Catabolite repressor/activator (Fructose repressor)	cra fruC fruR shl b0080 JW0078	Escherichia coli (strain K12)	334
+ptsH	P0AA04	PTHP_ECOLI	reviewed	Phosphocarrier protein HPr (Histidine-containing protein)	ptsH hpr b2415 JW2408	Escherichia coli (strain K12)	85
+nuoA	P0AFC3	NUOA_ECOLI	reviewed	NADH-quinone oxidoreductase subunit A (EC 7.1.1.-) (NADH dehydrogenase I subunit A) (NDH-1 subunit A) (NUO1)	nuoA b2288 JW2283	Escherichia coli (strain K12)	147
+rplV	P61175	RL22_ECOLI	reviewed	50S ribosomal protein L22 (Large ribosomal subunit protein uL22)	rplV eryB b3315 JW3277	Escherichia coli (strain K12)	110
+atpF	P0ABA0	ATPF_ECOLI	reviewed	ATP synthase subunit b (ATP synthase F(0) sector subunit b) (ATPase subunit I) (F-type ATPase subunit b) (F-ATPase subunit b)	atpF papF uncF b3736 JW3714	Escherichia coli (strain K12)	156
+sucC	P0A836	SUCC_ECOLI	reviewed	Succinate--CoA ligase [ADP-forming] subunit beta (EC 6.2.1.5) (Succinyl-CoA synthetase subunit beta) (SCS-beta)	sucC b0728 JW0717	Escherichia coli (strain K12)	388
+cydA	P0ABJ9	CYDA_ECOLI	reviewed	Cytochrome bd-I ubiquinol oxidase subunit 1 (EC 7.1.1.7) (Cytochrome bd-I oxidase subunit I) (Cytochrome d ubiquinol oxidase subunit I)	cydA cyd-1 b0733 JW0722	Escherichia coli (strain K12)	522
+lpdA	P0A9P0	DLDH_ECOLI	reviewed	Dihydrolipoyl dehydrogenase (EC 1.8.1.4) (Dihydrolipoamide dehydrogenase) (E3 component of pyruvate and 2-oxoglutarate dehydrogenases complexes) (Glycine cleavage system L protein)	lpdA lpd b0116 JW0112	Escherichia coli (strain K12)	474
+rpmJ	P0A7Q6	RL36_ECOLI	reviewed	50S ribosomal protein L36 (Large ribosomal subunit protein bL36-A) (Ribosomal protein B)	rpmJ b3299 JW3261	Escherichia coli (strain K12)	38
+frdB	P0AC47	FRDB_ECOLI	reviewed	Fumarate reductase iron-sulfur subunit (EC 1.3.5.1)	frdB b4153 JW4114	Escherichia coli (strain K12)	244
+ppc	P00864	CAPP_ECOLI	reviewed	Phosphoenolpyruvate carboxylase (PEPC) (PEPCase) (EC 4.1.1.31)	ppc glu b3956 JW3928	Escherichia coli (strain K12)	883
+crr	P69783	PTGA_ECOLI	reviewed	PTS system glucose-specific EIIA component (EIIA-Glc) (EIII-Glc) (Glucose-specific phosphotransferase enzyme IIA component)	crr gsr iex tgs treD b2417 JW2410	Escherichia coli (strain K12)	169
+rpmA	P0A7L8	RL27_ECOLI	reviewed	50S ribosomal protein L27 (Large ribosomal subunit protein bL27)	rpmA b3185 JW3152	Escherichia coli (strain K12)	85
+rpe	P0AG07	RPE_ECOLI	reviewed	Ribulose-phosphate 3-epimerase (EC 5.1.3.1) (Pentose-5-phosphate 3-epimerase) (PPE) (R5P3E)	rpe dod yhfD b3386 JW3349	Escherichia coli (strain K12)	225
+gltA	P0ABH7	CISY_ECOLI	reviewed	Citrate synthase (EC 2.3.3.16)	gltA gluT icdB b0720 JW0710	Escherichia coli (strain K12)	427
+talA	P0A867	TALA_ECOLI	reviewed	Transaldolase A (EC 2.2.1.2)	talA b2464 JW2448	Escherichia coli (strain K12)	316
+rplE	P62399	RL5_ECOLI	reviewed	50S ribosomal protein L5 (Large ribosomal subunit protein uL5)	rplE b3308 JW3270	Escherichia coli (strain K12)	179
+pgk	P0A799	PGK_ECOLI	reviewed	Phosphoglycerate kinase (EC 2.7.2.3)	pgk b2926 JW2893	Escherichia coli (strain K12)	387
+rpmC	P0A7M6	RL29_ECOLI	reviewed	50S ribosomal protein L29 (Large ribosomal subunit protein uL29)	rpmC b3312 JW3274	Escherichia coli (strain K12)	63
+dcuS	P0AEC8	DCUS_ECOLI	reviewed	Sensor histidine kinase DcuS (EC 2.7.13.3) (Fumarate sensor)	dcuS yjdH b4125 JW4086	Escherichia coli (strain K12)	543
+fadR	P0A8V6	FADR_ECOLI	reviewed	Fatty acid metabolism regulator protein	fadR oleR thdB b1187 JW1176	Escherichia coli (strain K12)	239
+rpiA	P0A7Z0	RPIA_ECOLI	reviewed	Ribose-5-phosphate isomerase A (EC 5.3.1.6) (Phosphoriboisomerase A) (PRI)	rpiA ygfC b2914 JW5475	Escherichia coli (strain K12)	219
+galM	P0A9C3	GALM_ECOLI	reviewed	Aldose 1-epimerase (EC 5.1.3.3) (Galactose mutarotase) (Type-1 mutarotase)	galM b0756 JW0739	Escherichia coli (strain K12)	346
+frdD	P0A8Q3	FRDD_ECOLI	reviewed	Fumarate reductase subunit D (Fumarate reductase 13 kDa hydrophobic protein)	frdD b4151 JW4112	Escherichia coli (strain K12)	119
+atpI	P0ABC0	ATPZ_ECOLI	reviewed	ATP synthase protein I	atpI uncI b3739 JW5611	Escherichia coli (strain K12)	126
+nuoK	P0AFE4	NUOK_ECOLI	reviewed	NADH-quinone oxidoreductase subunit K (EC 7.1.1.-) (NADH dehydrogenase I subunit K) (NDH-1 subunit K) (NUO11)	nuoK b2279 JW2274	Escherichia coli (strain K12)	100
+eno	P0A6P9	ENO_ECOLI	reviewed	Enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (2-phosphoglycerate dehydratase)	eno b2779 JW2750	Escherichia coli (strain K12)	432
+gpsA	P0A6S7	GPDA_ECOLI	reviewed	Glycerol-3-phosphate dehydrogenase [NAD(P)+] (EC 1.1.1.94) (NAD(P)H-dependent glycerol-3-phosphate dehydrogenase)	gpsA b3608 JW3583	Escherichia coli (strain K12)	339
+fdnH	P0AAJ3	FDNH_ECOLI	reviewed	Formate dehydrogenase, nitrate-inducible, iron-sulfur subunit (Anaerobic formate dehydrogenase iron-sulfur subunit) (Formate dehydrogenase-N subunit beta) (FDH-N subunit beta)	fdnH b1475 JW1471	Escherichia coli (strain K12)	294
+acs	P27550	ACSA_ECOLI	reviewed	Acetyl-coenzyme A synthetase (AcCoA synthetase) (Acs) (EC 6.2.1.1) (Acetate--CoA ligase) (Acyl-activating enzyme)	acs yfaC b4069 JW4030	Escherichia coli (strain K12)	652
+cydB	P0ABK2	CYDB_ECOLI	reviewed	Cytochrome bd-I ubiquinol oxidase subunit 2 (EC 7.1.1.7) (Cytochrome bd-I oxidase subunit II) (Cytochrome d ubiquinol oxidase subunit II)	cydB cyd-2 b0734 JW0723	Escherichia coli (strain K12)	379
+cyoD	P0ABJ6	CYOD_ECOLI	reviewed	Cytochrome bo(3) ubiquinol oxidase subunit 4 (Cytochrome o ubiquinol oxidase subunit 4) (Cytochrome o subunit 4) (Oxidase bo(3) subunit 4) (Ubiquinol oxidase chain D) (Ubiquinol oxidase polypeptide IV) (Ubiquinol oxidase subunit 4)	cyoD b0429 JW0419	Escherichia coli (strain K12)	109
+nuoE	P0AFD1	NUOE_ECOLI	reviewed	NADH-quinone oxidoreductase subunit E (EC 7.1.1.-) (NADH dehydrogenase I subunit E) (NDH-1 subunit E) (NUO5)	nuoE b2285 JW2280	Escherichia coli (strain K12)	166
+rpsB	P0A7V0	RS2_ECOLI	reviewed	30S ribosomal protein S2 (Small ribosomal subunit protein uS2)	rpsB b0169 JW0164	Escherichia coli (strain K12)	241
+lacI	P03023	LACI_ECOLI	reviewed	Lactose operon repressor	lacI b0345 JW0336	Escherichia coli (strain K12)	360
+atpD	P0ABB4	ATPB_ECOLI	reviewed	ATP synthase subunit beta (EC 7.1.2.2) (ATP synthase F1 sector subunit beta) (F-ATPase subunit beta)	atpD papB uncD b3732 JW3710	Escherichia coli (strain K12)	460
+frdA	P00363	FRDA_ECOLI	reviewed	Fumarate reductase flavoprotein subunit (EC 1.3.5.4)	frdA b4154 JW4115	Escherichia coli (strain K12)	602
+aceA	P0A9G6	ACEA_ECOLI	reviewed	Isocitrate lyase (ICL) (EC 4.1.3.1) (Isocitrase) (Isocitratase)	aceA icl b4015 JW3975	Escherichia coli (strain K12)	434
+nuoI	P0AFD6	NUOI_ECOLI	reviewed	NADH-quinone oxidoreductase subunit I (EC 7.1.1.-) (NADH dehydrogenase I subunit I) (NDH-1 subunit I) (NUO9)	nuoI b2281 JW2276	Escherichia coli (strain K12)	180
+pfkA	P0A796	PFKA_ECOLI	reviewed	ATP-dependent 6-phosphofructokinase isozyme 1 (ATP-PFK 1) (Phosphofructokinase 1) (EC 2.7.1.11) (6-phosphofructokinase isozyme I) (Phosphohexokinase 1)	pfkA b3916 JW3887	Escherichia coli (strain K12)	320
+pntB	P0AB67	PNTB_ECOLI	reviewed	NAD(P) transhydrogenase subunit beta (EC 7.1.1.1) (Nicotinamide nucleotide transhydrogenase subunit beta) (Pyridine nucleotide transhydrogenase subunit beta)	pntB b1602 JW1594	Escherichia coli (strain K12)	462
+rbsR	P0ACQ0	RBSR_ECOLI	reviewed	Ribose operon repressor	rbsR b3753 JW3732	Escherichia coli (strain K12)	330
+rplD	P60723	RL4_ECOLI	reviewed	50S ribosomal protein L4 (Large ribosomal subunit protein uL4)	rplD eryA b3319 JW3281	Escherichia coli (strain K12)	201
+rplM	P0AA10	RL13_ECOLI	reviewed	50S ribosomal protein L13 (Large ribosomal subunit protein uL13)	rplM b3231 JW3200	Escherichia coli (strain K12)	142
+rpsE	P0A7W1	RS5_ECOLI	reviewed	30S ribosomal protein S5 (Small ribosomal subunit protein uS5)	rpsE spc b3303 JW3265	Escherichia coli (strain K12)	167
+atpG	P0ABA6	ATPG_ECOLI	reviewed	ATP synthase gamma chain (ATP synthase F1 sector gamma subunit) (F-ATPase gamma subunit)	atpG papC uncG b3733 JW3711	Escherichia coli (strain K12)	287
+rpsS	P0A7U3	RS19_ECOLI	reviewed	30S ribosomal protein S19 (Small ribosomal subunit protein uS19)	rpsS b3316 JW3278	Escherichia coli (strain K12)	92
+gapA	P0A9B2	G3P1_ECOLI	reviewed	Glyceraldehyde-3-phosphate dehydrogenase A (GAPDH-A) (EC 1.2.1.12) (NAD-dependent glyceraldehyde-3-phosphate dehydrogenase)	gapA b1779 JW1768	Escherichia coli (strain K12)	331
+rpmF	P0A7N4	RL32_ECOLI	reviewed	50S ribosomal protein L32 (Large ribosomal subunit protein bL32)	rpmF b1089 JW1075	Escherichia coli (strain K12)	57
+rplX	P60624	RL24_ECOLI	reviewed	50S ribosomal protein L24 (Large ribosomal subunit protein uL24)	rplX b3309 JW3271	Escherichia coli (strain K12)	104
+aceB	P08997	MASY_ECOLI	reviewed	Malate synthase A (MSA) (EC 2.3.3.9)	aceB mas b4014 JW3974	Escherichia coli (strain K12)	533
+glk	P0A6V8	GLK_ECOLI	reviewed	Glucokinase (EC 2.7.1.2) (Glucose kinase)	glk b2388 JW2385	Escherichia coli (strain K12)	321
+glpD	P13035	GLPD_ECOLI	reviewed	Aerobic glycerol-3-phosphate dehydrogenase (EC 1.1.5.3)	glpD glyD b3426 JW3389	Escherichia coli (strain K12)	501
+fnr	P0A9E5	FNR_ECOLI	reviewed	Fumarate and nitrate reduction regulatory protein	fnr nirR b1334 JW1328	Escherichia coli (strain K12)	250
+fdoH	P0AAJ5	FDOH_ECOLI	reviewed	Formate dehydrogenase-O iron-sulfur subunit (Aerobic formate dehydrogenase iron-sulfur subunit) (FDH-Z subunit beta) (Formate dehydrogenase-O subunit beta)	fdoH b3893 JW3864	Escherichia coli (strain K12)	300
+pgm	P36938	PGM_ECOLI	reviewed	Phosphoglucomutase (PGM) (EC 5.4.2.2) (Glucose phosphomutase)	pgm b0688 JW0675	Escherichia coli (strain K12)	546
+gpmA	P62707	GPMA_ECOLI	reviewed	2,3-bisphosphoglycerate-dependent phosphoglycerate mutase (BPG-dependent PGAM) (PGAM) (Phosphoglyceromutase) (dPGM) (EC 5.4.2.11)	gpmA gpm pgm pgmA b0755 JW0738	Escherichia coli (strain K12)	250
+dcuB	P0ABN9	DCUB_ECOLI	reviewed	Anaerobic C4-dicarboxylate transporter DcuB	dcuB genF b4123 JW4084	Escherichia coli (strain K12)	446
+rbsB	P02925	RBSB_ECOLI	reviewed	Ribose import binding protein RbsB	rbsB prlB rbsP b3751 JW3730	Escherichia coli (strain K12)	296
+rplI	P0A7R1	RL9_ECOLI	reviewed	50S ribosomal protein L9 (Large ribosomal subunit protein bL9)	rplI b4203 JW4161	Escherichia coli (strain K12)	149
+fumA	P0AC33	FUMA_ECOLI	reviewed	Fumarate hydratase class I, aerobic (EC 4.2.1.2) (Fumarase A) (Oxaloacetate keto--enol-isomerase) (OAAKE isomerase) (Oxaloacetate tautomerase) (EC 5.3.2.2)	fumA b1612 JW1604	Escherichia coli (strain K12)	548
+atpC	P0A6E6	ATPE_ECOLI	reviewed	ATP synthase epsilon chain (ATP synthase F1 sector epsilon subunit) (F-ATPase epsilon subunit)	atpC papG uncC b3731 JW3709	Escherichia coli (strain K12)	139
+fdoI	P0AEL0	FDOI_ECOLI	reviewed	Formate dehydrogenase, cytochrome b556(fdo) subunit (Aerobic formate dehydrogenase cytochrome b556 subunit) (FDH-Z subunit gamma) (Formate dehydrogenase-O subunit gamma)	fdoI b3892 JW3863	Escherichia coli (strain K12)	211
+dcuC	P0ABP3	DCUC_ECOLI	reviewed	Anaerobic C4-dicarboxylate transporter DcuC	dcuC b0621 JW0613/JW0616	Escherichia coli (strain K12)	461
+pck	P22259	PCKA_ECOLI	reviewed	Phosphoenolpyruvate carboxykinase (ATP) (PCK) (PEP carboxykinase) (PEPCK) (EC 4.1.1.49)	pckA pck b3403 JW3366	Escherichia coli (strain K12)	540
+rpsF	P02358	RS6_ECOLI	reviewed	30S ribosomal protein S6 (Small ribosomal subunit protein bS6) [Cleaved into: 30S ribosomal protein S6, fully modified isoform; 30S ribosomal protein S6, non-modified isoform]	rpsF b4200 JW4158	Escherichia coli (strain K12)	135
+pgl	P52697	6PGL_ECOLI	reviewed	6-phosphogluconolactonase (6-P-gluconolactonase) (Pgl) (EC 3.1.1.31)	pgl ybhE b0767 JW0750	Escherichia coli (strain K12)	331
+atpA	P0ABB0	ATPA_ECOLI	reviewed	ATP synthase subunit alpha (EC 7.1.2.2) (ATP synthase F1 sector subunit alpha) (F-ATPase subunit alpha)	atpA papA uncA b3734 JW3712	Escherichia coli (strain K12)	513
+rpsG	P02359	RS7_ECOLI	reviewed	30S ribosomal protein S7 (Small ribosomal subunit protein uS7)	rpsG b3341 JW3303	Escherichia coli (strain K12)	179
+rpmE	P0A7M9	RL31_ECOLI	reviewed	50S ribosomal protein L31 (Large ribosomal subunit protein bL31-A)	rpmE b3936 JW3907	Escherichia coli (strain K12)	70
+rbsA	P04983	RBSA_ECOLI	reviewed	Ribose import ATP-binding protein RbsA (EC 7.5.2.7)	rbsA b3749 JW3728	Escherichia coli (strain K12)	501
+fdnG	P24183	FDNG_ECOLI	reviewed	Formate dehydrogenase, nitrate-inducible, major subunit (EC 1.17.5.3) (Anaerobic formate dehydrogenase major subunit) (Formate dehydrogenase-N subunit alpha) (FDH-N subunit alpha)	fdnG b1474 JW1470	Escherichia coli (strain K12)	1015
+rplW	P0ADZ0	RL23_ECOLI	reviewed	50S ribosomal protein L23 (Large ribosomal subunit protein uL23)	rplW b3318 JW3280	Escherichia coli (strain K12)	100
+atpB	P0AB98	ATP6_ECOLI	reviewed	ATP synthase subunit a (ATP synthase F0 sector subunit a) (F-ATPase subunit 6)	atpB papD uncB b3738 JW3716	Escherichia coli (strain K12)	271
+rpsT	P0A7U7	RS20_ECOLI	reviewed	30S ribosomal protein S20 (Small ribosomal subunit protein bS20)	rpsT b0023 JW0022	Escherichia coli (strain K12)	87
+icdA	P08200	IDH_ECOLI	reviewed	Isocitrate dehydrogenase [NADP] (IDH) (EC 1.1.1.42) (IDP) (NADP(+)-specific ICDH) (Oxalosuccinate decarboxylase)	icd icdA icdE b1136 JW1122	Escherichia coli (strain K12)	416
+tktA	P27302	TKT1_ECOLI	reviewed	Transketolase 1 (TK 1) (EC 2.2.1.1)	tktA tkt b2935 JW5478	Escherichia coli (strain K12)	663
+zwf	P0AC53	G6PD_ECOLI	reviewed	Glucose-6-phosphate 1-dehydrogenase (G6PD) (EC 1.1.1.49) [Cleaved into: Extracellular death factor (EDF)]	zwf b1852 JW1841	Escherichia coli (strain K12)	491
+rpmD	P0AG51	RL30_ECOLI	reviewed	50S ribosomal protein L30 (Large ribosomal subunit protein uL30)	rpmD b3302 JW3264	Escherichia coli (strain K12)	59
+fdoG	P32176	FDOG_ECOLI	reviewed	Formate dehydrogenase-O major subunit (EC 1.17.1.9) (Aerobic formate dehydrogenase major subunit) (FDH-Z subunit alpha) (Formate dehydrogenase-O subunit alpha)	fdoG b3894 JW3865	Escherichia coli (strain K12)	1016
+pykF	P0AD61	KPYK1_ECOLI	reviewed	Pyruvate kinase I (EC 2.7.1.40) (PK-1)	pykF b1676 JW1666	Escherichia coli (strain K12)	470
+ptsG	P69786	PTGCB_ECOLI	reviewed	PTS system glucose-specific EIICB component (EIICB-Glc) (EII-Glc) [Includes: Glucose permease IIC component (PTS system glucose-specific EIIC component); Glucose-specific phosphotransferase enzyme IIB component (EC 2.7.1.199) (PTS system glucose-specific EIIB component)]	ptsG glcA umg b1101 JW1087	Escherichia coli (strain K12)	477
+gnd	P00350	6PGD_ECOLI	reviewed	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)	gnd b2029 JW2011	Escherichia coli (strain K12)	468
+nuoF	P31979	NUOF_ECOLI	reviewed	NADH-quinone oxidoreductase subunit F (EC 7.1.1.-) (NADH dehydrogenase I subunit F) (NDH-1 subunit F) (NUO6)	nuoF b2284 JW2279	Escherichia coli (strain K12)	445
+rplJ	P0A7J3	RL10_ECOLI	reviewed	50S ribosomal protein L10 (50S ribosomal protein L8) (Large ribosomal subunit protein uL10)	rplJ b3985 JW3948	Escherichia coli (strain K12)	165
+pflA	P0A9N4	PFLA_ECOLI	reviewed	Pyruvate formate-lyase 1-activating enzyme (EC 1.97.1.4) (Formate-C-acetyltransferase-activating enzyme 1) (PFL-activating enzyme 1)	pflA act b0902 JW0885	Escherichia coli (strain K12)	246
+ndh	P00393	DHNA_ECOLI	reviewed	NADH dehydrogenase (EC 1.6.99.3)	ndh b1109 JW1095	Escherichia coli (strain K12)	434
+rpsI	P0A7X3	RS9_ECOLI	reviewed	30S ribosomal protein S9 (Small ribosomal subunit protein uS9)	rpsI b3230 JW3199	Escherichia coli (strain K12)	130
+dctA	P0A830	DCTA_ECOLI	reviewed	Aerobic C4-dicarboxylate transport protein	dctA b3528 JW3496	Escherichia coli (strain K12)	428
+pdhR	P0ACL9	PDHR_ECOLI	reviewed	Pyruvate dehydrogenase complex repressor	pdhR aceC genA yacB b0113 JW0109	Escherichia coli (strain K12)	254
+rpsL	P0A7S3	RS12_ECOLI	reviewed	30S ribosomal protein S12 (Small ribosomal subunit protein uS12)	rpsL strA b3342 JW3304	Escherichia coli (strain K12)	124
+nuoB	P0AFC7	NUOB_ECOLI	reviewed	NADH-quinone oxidoreductase subunit B (EC 7.1.1.-) (NADH dehydrogenase I subunit B) (NDH-1 subunit B) (NUO2)	nuoB b2287 JW5875	Escherichia coli (strain K12)	220
+arcA	P0A9Q1	ARCA_ECOLI	reviewed	Aerobic respiration control protein ArcA (Dye resistance protein)	arcA cpxC dye fexA msp seg sfrA b4401 JW4364	Escherichia coli (strain K12)	238
+tktB	P33570	TKT2_ECOLI	reviewed	Transketolase 2 (TK 2) (EC 2.2.1.1)	tktB b2465 JW2449	Escherichia coli (strain K12)	667
+rpmG	P0A7N9	RL33_ECOLI	reviewed	50S ribosomal protein L33 (Large ribosomal subunit protein bL33)	rpmG b3636 JW3611	Escherichia coli (strain K12)	55
+dcuR	P0AD01	DCUR_ECOLI	reviewed	Transcriptional regulatory protein DcuR	dcuR yjdG b4124 JW4085	Escherichia coli (strain K12)	239
+rpiB	P37351	RPIB_ECOLI	reviewed	Ribose-5-phosphate isomerase B (EC 5.3.1.6) (Phosphoriboisomerase B)	rpiB yjcA b4090 JW4051	Escherichia coli (strain K12)	149
+talB	P0A870	TALB_ECOLI	reviewed	Transaldolase B (EC 2.2.1.2)	talB yaaK b0008 JW0007	Escherichia coli (strain K12)	317
+cyoC	P0ABJ3	CYOC_ECOLI	reviewed	Cytochrome bo(3) ubiquinol oxidase subunit 3 (Cytochrome o ubiquinol oxidase subunit 3) (Cytochrome o subunit 3) (Oxidase bo(3) subunit 3) (Ubiquinol oxidase chain C) (Ubiquinol oxidase polypeptide III) (Ubiquinol oxidase subunit 3)	cyoC b0430 JW0420	Escherichia coli (strain K12)	204
+adk	P69441	KAD_ECOLI	reviewed	Adenylate kinase (AK) (EC 2.7.4.3) (ATP-AMP transphosphorylase) (ATP:AMP phosphotransferase) (Adenylate monophosphate kinase)	adk dnaW plsA b0474 JW0463	Escherichia coli (strain K12)	214
+lacZ	P00722	BGAL_ECOLI	reviewed	Beta-galactosidase (Beta-gal) (EC 3.2.1.23) (Lactase)	lacZ b0344 JW0335	Escherichia coli (strain K12)	1024
+cyoB	P0ABI8	CYOB_ECOLI	reviewed	Cytochrome bo(3) ubiquinol oxidase subunit 1 (EC 7.1.1.3) (Cytochrome b562-o complex subunit I) (Cytochrome o ubiquinol oxidase subunit 1) (Cytochrome o subunit 1) (Oxidase bo(3) subunit 1) (Ubiquinol oxidase chain A) (Ubiquinol oxidase polypeptide I) (Ubiquinol oxidase subunit 1)	cyoB b0431 JW0421	Escherichia coli (strain K12)	663
+aceE	P0AFG8	ODP1_ECOLI	reviewed	Pyruvate dehydrogenase E1 component (PDH E1 component) (EC 1.2.4.1)	aceE b0114 JW0110	Escherichia coli (strain K12)	887
+frdC	P0A8Q0	FRDC_ECOLI	reviewed	Fumarate reductase subunit C (Fumarate reductase 15 kDa hydrophobic protein)	frdC b4152 JW4113	Escherichia coli (strain K12)	131
+rpsC	P0A7V3	RS3_ECOLI	reviewed	30S ribosomal protein S3 (Small ribosomal subunit protein uS3)	rpsC b3314 JW3276	Escherichia coli (strain K12)	233
+rplA	P0A7L0	RL1_ECOLI	reviewed	50S ribosomal protein L1 (Large ribosomal subunit protein uL1)	rplA b3984 JW3947	Escherichia coli (strain K12)	234
+mdh	P61889	MDH_ECOLI	reviewed	Malate dehydrogenase (EC 1.1.1.37)	mdh b3236 JW3205	Escherichia coli (strain K12)	312
+sucB	P0AFG6	ODO2_ECOLI	reviewed	Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex (EC 2.3.1.61) (2-oxoglutarate dehydrogenase complex component E2) (OGDC-E2) (Dihydrolipoamide succinyltransferase component of 2-oxoglutarate dehydrogenase complex)	sucB b0727 JW0716	Escherichia coli (strain K12)	405
+rplT	P0A7L3	RL20_ECOLI	reviewed	50S ribosomal protein L20 (Large ribosomal subunit protein bL20)	rplT pdzA b1716 JW1706	Escherichia coli (strain K12)	118
+pgi	P0A6T1	G6PI_ECOLI	reviewed	Glucose-6-phosphate isomerase (GPI) (EC 5.3.1.9) (Phosphoglucose isomerase) (PGI) (Phosphohexose isomerase) (PHI)	pgi b4025 JW3985	Escherichia coli (strain K12)	549
+ackA	P0A6A3	ACKA_ECOLI	reviewed	Acetate kinase (EC 2.7.2.1) (Acetokinase)	ackA ack b2296 JW2293	Escherichia coli (strain K12)	400
+rpmH	P0A7P5	RL34_ECOLI	reviewed	50S ribosomal protein L34 (Large ribosomal subunit protein bL34)	rpmH rimA ssaF b3703 JW3680	Escherichia coli (strain K12)	46
+rpmI	P0A7Q1	RL35_ECOLI	reviewed	50S ribosomal protein L35 (Large ribosomal subunit protein bL35) (Ribosomal protein A)	rpmI b1717 JW1707	Escherichia coli (strain K12)	65
+nuoH	P0AFD4	NUOH_ECOLI	reviewed	NADH-quinone oxidoreductase subunit H (EC 7.1.1.-) (NADH dehydrogenase I subunit H) (NDH-1 subunit H) (NUO8)	nuoH b2282 JW2277	Escherichia coli (strain K12)	325
+tpiA	P0A858	TPIS_ECOLI	reviewed	Triosephosphate isomerase (TIM) (TPI) (EC 5.3.1.1) (Triose-phosphate isomerase)	tpiA tpi b3919 JW3890	Escherichia coli (strain K12)	255
+rplY	P68919	RL25_ECOLI	reviewed	50S ribosomal protein L25 (Large ribosomal subunit protein bL25)	rplY b2185 JW2173	Escherichia coli (strain K12)	94
+galR	P03024	GALR_ECOLI	reviewed	HTH-type transcriptional regulator GalR (Galactose operon repressor)	galR b2837 JW2805	Escherichia coli (strain K12)	343
+rbsC	P0AGI1	RBSC_ECOLI	reviewed	Ribose import permease protein RbsC	rbsC b3750 JW3729	Escherichia coli (strain K12)	321
+dcuA	P0ABN5	DCUA_ECOLI	reviewed	Anaerobic C4-dicarboxylate transporter DcuA	dcuA genA b4138 JW5735	Escherichia coli (strain K12)	433
+sdhB	P07014	SDHB_ECOLI	reviewed	Succinate dehydrogenase iron-sulfur subunit (EC 1.3.5.1)	sdhB b0724 JW0714	Escherichia coli (strain K12)	238
+ppa	P0A7A9	IPYR_ECOLI	reviewed	Inorganic pyrophosphatase (EC 3.6.1.1) (Pyrophosphate phospho-hydrolase) (PPase)	ppa b4226 JW4185	Escherichia coli (strain K12)	176
+rplL	P0A7K2	RL7_ECOLI	reviewed	50S ribosomal protein L7/L12 (L8) (Large ribosomal subunit protein bL12)	rplL b3986 JW3949	Escherichia coli (strain K12)	121
+rplO	P02413	RL15_ECOLI	reviewed	50S ribosomal protein L15 (Large ribosomal subunit protein uL15)	rplO b3301 JW3263	Escherichia coli (strain K12)	144
+focA	P0AC23	FOCA_ECOLI	reviewed	Probable formate transporter 1 (Formate channel 1)	focA ycaE b0904 JW0887	Escherichia coli (strain K12)	285
+rplP	P0ADY7	RL16_ECOLI	reviewed	50S ribosomal protein L16 (Large ribosomal subunit protein uL16)	rplP b3313 JW3275	Escherichia coli (strain K12)	136
+rpsM	P0A7S9	RS13_ECOLI	reviewed	30S ribosomal protein S13 (Small ribosomal subunit protein uS13)	rpsM b3298 JW3260	Escherichia coli (strain K12)	118
+pykA	P21599	KPYK2_ECOLI	reviewed	Pyruvate kinase II (EC 2.7.1.40) (PK-2)	pykA b1854 JW1843	Escherichia coli (strain K12)	480
+rpsR	P0A7T7	RS18_ECOLI	reviewed	30S ribosomal protein S18 (Small ribosomal subunit protein bS18)	rpsR b4202 JW4160	Escherichia coli (strain K12)	75
+rpiR	P0ACS7	RPIR_ECOLI	reviewed	HTH-type transcriptional regulator RpiR (Als operon repressor)	rpiR alsR yjcY b4089 JW4050	Escherichia coli (strain K12)	296
+acnA	P25516	ACNA_ECOLI	reviewed	Aconitate hydratase A (ACN) (Aconitase) (EC 4.2.1.3) (Iron-responsive protein-like) (IRP-like) (RNA-binding protein) (Stationary phase enzyme)	acnA acn b1276 JW1268	Escherichia coli (strain K12)	891
+cyoA	P0ABJ1	CYOA_ECOLI	reviewed	Cytochrome bo(3) ubiquinol oxidase subunit 2 (Cytochrome b562-o complex subunit II) (Cytochrome o ubiquinol oxidase subunit 2) (Cytochrome o subunit 2) (Oxidase bo(3) subunit 2) (Ubiquinol oxidase chain B) (Ubiquinol oxidase polypeptide II) (Ubiquinol oxidase subunit 2)	cyoA b0432 JW0422	Escherichia coli (strain K12)	315
+pflC	P32675	PFLC_ECOLI	reviewed	Pyruvate formate-lyase 2-activating enzyme (EC 1.97.1.4) (Formate-C-acetyltransferase-activating enzyme 2) (PFL-activating enzyme 2)	pflC yijM b3952 JW3924	Escherichia coli (strain K12)	292
+fumB	P14407	FUMB_ECOLI	reviewed	Fumarate hydratase class I, anaerobic (EC 4.2.1.2) (D-tartrate dehydratase) (EC 4.2.1.81) (Fumarase B)	fumB b4122 JW4083	Escherichia coli (strain K12)	548
+atpH	P0ABA4	ATPD_ECOLI	reviewed	ATP synthase subunit delta (ATP synthase F(1) sector subunit delta) (F-type ATPase subunit delta) (F-ATPase subunit delta)	atpH papE uncH b3735 JW3713	Escherichia coli (strain K12)	177
+ppsA	P23538	PPSA_ECOLI	reviewed	Phosphoenolpyruvate synthase (PEP synthase) (EC 2.7.9.2) (Pyruvate, water dikinase)	ppsA pps b1702 JW1692	Escherichia coli (strain K12)	792
+rpsA	P0AG67	RS1_ECOLI	reviewed	30S ribosomal protein S1 (Bacteriophage Q beta RNA-directed RNA polymerase subunit I) (Small ribosomal subunit protein bS1)	rpsA ssyF b0911 JW0894	Escherichia coli (strain K12)	557
+glpB	P13033	GLPB_ECOLI	reviewed	Anaerobic glycerol-3-phosphate dehydrogenase subunit B (Anaerobic G-3-P dehydrogenase subunit B) (Anaerobic G3Pdhase B) (EC 1.1.5.3)	glpB b2242 JW2236	Escherichia coli (strain K12)	419
+rbsD	P04982	RBSD_ECOLI	reviewed	D-ribose pyranase (EC 5.4.99.62)	rbsD b3748 JW5857	Escherichia coli (strain K12)	139
+pta	P0A9M8	PTA_ECOLI	reviewed	Phosphate acetyltransferase (EC 2.3.1.8) (Phosphotransacetylase)	pta b2297 JW2294	Escherichia coli (strain K12)	714
+galT	P09148	GAL7_ECOLI	reviewed	Galactose-1-phosphate uridylyltransferase (Gal-1-P uridylyltransferase) (EC 2.7.7.12) (UDP-glucose--hexose-1-phosphate uridylyltransferase)	galT galB b0758 JW0741	Escherichia coli (strain K12)	348
+rpsP	P0A7T3	RS16_ECOLI	reviewed	30S ribosomal protein S16 (Small ribosomal subunit protein bS16)	rpsP b2609 JW2590	Escherichia coli (strain K12)	82
+galP	P0AEP1	GALP_ECOLI	reviewed	Galactose-proton symporter (Galactose transporter)	galP b2943 JW2910	Escherichia coli (strain K12)	464
+nuoJ	P0AFE0	NUOJ_ECOLI	reviewed	NADH-quinone oxidoreductase subunit J (EC 7.1.1.-) (NADH dehydrogenase I subunit J) (NDH-1 subunit J) (NUO10)	nuoJ b2280 JW2275	Escherichia coli (strain K12)	184
+sdhC	P69054	DHSC_ECOLI	reviewed	Succinate dehydrogenase cytochrome b556 subunit (Cytochrome b-556)	sdhC cybA b0721 JW0711	Escherichia coli (strain K12)	129
+sucD	P0AGE9	SUCD_ECOLI	reviewed	Succinate--CoA ligase [ADP-forming] subunit alpha (EC 6.2.1.5) (Succinyl-CoA synthetase subunit alpha) (SCS-alpha)	sucD b0729 JW0718	Escherichia coli (strain K12)	289
+fba	P0AB71	ALF_ECOLI	reviewed	Fructose-bisphosphate aldolase class 2 (FBP aldolase) (FBPA) (EC 4.1.2.13) (Fructose-1,6-bisphosphate aldolase) (Fructose-bisphosphate aldolase class II)	fbaA fba fda b2925 JW2892	Escherichia coli (strain K12)	359
+rpsN	P0AG59	RS14_ECOLI	reviewed	30S ribosomal protein S14 (Small ribosomal subunit protein uS14)	rpsN b3307 JW3269	Escherichia coli (strain K12)	101
+glpK	P0A6F3	GLPK_ECOLI	reviewed	Glycerol kinase (EC 2.7.1.30) (ATP:glycerol 3-phosphotransferase) (Glycerokinase) (GK)	glpK b3926 JW3897	Escherichia coli (strain K12)	502
+galU	P0AEP3	GALU_ECOLI	reviewed	UTP--glucose-1-phosphate uridylyltransferase (EC 2.7.7.9) (Alpha-D-glucosyl-1-phosphate uridylyltransferase) (UDP-glucose pyrophosphorylase) (UDPGP) (Uridine diphosphoglucose pyrophosphorylase)	galU ychD b1236 JW1224	Escherichia coli (strain K12)	302
+glpR	P0ACL0	GLPR_ECOLI	reviewed	Glycerol-3-phosphate regulon repressor	glpR b3423 JW3386	Escherichia coli (strain K12)	252
+fbp	P0A993	F16PA_ECOLI	reviewed	Fructose-1,6-bisphosphatase class 1 (FBPase class 1) (EC 3.1.3.11) (D-fructose-1,6-bisphosphate 1-phosphohydrolase class 1)	fbp fdp b4232 JW4191	Escherichia coli (strain K12)	332
+adhE	P0A9Q7	ADHE_ECOLI	reviewed	Aldehyde-alcohol dehydrogenase [Includes: Alcohol dehydrogenase (ADH) (EC 1.1.1.1); Acetaldehyde dehydrogenase [acetylating] (ACDH) (EC 1.2.1.10); Pyruvate-formate-lyase deactivase (PFL deactivase)]	adhE ana b1241 JW1228	Escherichia coli (strain K12)	891
+maeA	P26616	MAO1_ECOLI	reviewed	NAD-dependent malic enzyme (NAD-ME) (EC 1.1.1.38)	maeA sfcA b1479 JW5238	Escherichia coli (strain K12)	565

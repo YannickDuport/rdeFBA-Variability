@@ -127,8 +127,8 @@ class Matrrrices:
         self.check_dimensions()
 
         # model scaling
-        self.scaling_factors = scaling_factors
-        self.epsilon_scaling(model, run_rdeFBA, indicator_constraints)
+        # self.scaling_factors = scaling_factors
+        self.epsilon_scaling(model, scaling_factors, run_rdeFBA, indicator_constraints)
 
     def __repr__(self):
         return f'Matrrrix with n_y = {self.n_y}, n_u = {self.n_u}, and n_x = {self.n_x}'
@@ -756,7 +756,7 @@ class Matrrrices:
                         if event['listOfEffects'][i] == 0:
                             u_matrix_1_0[constraint_index_0, flux_index] = sign
                             x_matrix_1_0[constraint_index_0, self.x_vec.index(affected_bool)] = -1
-                            b_vec_1_0[constraint_index_0] = event['threshold'] (sign - eps)
+                            b_vec_1_0[constraint_index_0] = event['threshold'] * (sign - eps)
                         elif event['listOfEffects'][i] == 1:
                             u_matrix_1_1[constraint_index_1, flux_index] = sign
                             x_matrix_1_1[constraint_index_1, self.x_vec.index(affected_bool)] = 1

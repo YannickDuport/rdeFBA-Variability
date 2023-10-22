@@ -137,6 +137,11 @@ def mi_cp_linprog(matrices, t_0, t_end, n_steps=101, varphi=0.0, **optimization_
             model.write_to_file(write_model)
         model.set_solver_parameters(solver_parameters)
 
+    # set verbosity
+    verbosity_level = optimization_kwargs.get('verbosity_level', 1)
+    if verbosity_level > 2:
+        model.print_optimization_log()
+
     model.optimize()
 
     if model.status == lp_wrapper.OPTIMAL:
@@ -144,6 +149,8 @@ def mi_cp_linprog(matrices, t_0, t_end, n_steps=101, varphi=0.0, **optimization_
         u_data = np.reshape(model.get_solution()[n_ally:n_ally+n_allu], (n_steps, n_u))
         x_data = np.reshape(model.get_solution()[n_ally+n_allu:], (n_steps, n_x))
         objective_value = model.get_objective_val()
+        if verbosity_level > 1:
+            print(f"Optimal solution found with objective value: {objective_value}")
 
         # undo epsilon-scaling
         y_data *= matrices.y_scale

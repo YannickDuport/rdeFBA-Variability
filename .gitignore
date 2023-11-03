@@ -3,3 +3,6 @@
 
 # jupyter notebook stuff
 **/.ipynb_checkpoints
+
+# results (figures, lp-files, ...)
+results/**

@@ -5,6 +5,13 @@ PACKAGE_PATH = Path(__file__).parent
 PROJECT_PATH = PACKAGE_PATH.parent
 RESULT_PATH = PROJECT_PATH / 'results'
 FIGURE_PATH = RESULT_PATH / 'figures'
+LPFILE_PATH = RESULT_PATH / 'lp_files'
+FVA_PATH = RESULT_PATH / 'rdeFVA'
+
+Path(FIGURE_PATH).mkdir(parents=True, exist_ok=True)
+Path(FIGURE_PATH / 'svg').mkdir(parents=True, exist_ok=True)
+Path(LPFILE_PATH).mkdir(parents=True, exist_ok=True)
+Path(FVA_PATH).mkdir(parents=True, exist_ok=True)
 
 discretization_schemes = {
     'default': None,

@@ -64,9 +64,6 @@ def cov02_scaling():
         if r == "Maintenance":
             dicti['maintenanceScaling'] *= 60
 
-    # change units of degradation rates (1/min -> 1/h)
-    covert2002.stoich_degradation *= 60
-
     # scale objective weights by 10^6 (g/mmol -> ug/mmol)
     for macromolecule, dicti in covert2002.macromolecules_dict.items():
         dicti['objectiveWeight'] *= 1e6

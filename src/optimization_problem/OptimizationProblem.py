@@ -23,7 +23,7 @@ class rdeFBA_Problem:
         self.y0 = kwargs.get('set_y0', None)
         self.run_rdeFBA = kwargs.get('run_rdeFBA', True)
         self.indicator_constraints = kwargs.get('indicator_constraints', False)
-        self.scaling_factor = kwargs.get('eps_scaling_factor', (1.0, 1.0))
+        self.scaling_factor = kwargs.get('scaling_factors', (1.0, 1.0))
         self.varphi = kwargs.get('varphi', 0.0)
         self.rkm = kwargs.get('runge_kutta', None)
         tspan = kwargs.get('tspan', (0.0, 1.0))
@@ -264,8 +264,7 @@ class rdeFBA_Problem:
 
     def _create_matrices(self):
         """ Creates Matttrices object from pyrrrateModel object """
-        print(self.scaling_factor)
-        return Matrrrices(model=self.model, y0=self.y0, scaling_factor=self.scaling_factor, run_rdeFBA=self.run_rdeFBA,
+        return Matrrrices(model=self.model, y0=self.y0, scaling_factors=self.scaling_factor, run_rdeFBA=self.run_rdeFBA,
                           indicator_constraints=self.indicator_constraints)
 
     def _discretize_matrices(self, **optimization_kwargs):

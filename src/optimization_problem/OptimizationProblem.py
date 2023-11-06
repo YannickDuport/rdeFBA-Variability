@@ -131,7 +131,11 @@ class rdeFBA_Problem:
         # this ensures that the same initial values are use in each r-deFVA step, in cases where not each initial value was defined
         y0_old = copy.deepcopy(self.y0)
         y0_new = np.array([self.solution.dyndata.iloc[0].to_numpy()])
-        if (y0_old != y0_new):
+        if y0_old.size == y0_new.size:
+            if (y0_old != y0_new).any():
+                self.y0 = y0_new
+                self.create_MIP(**optimization_kwargs)
+        else:
             self.y0 = y0_new
             self.create_MIP(**optimization_kwargs)
         self.MIP.solver_model.add_mip_start(sol)
@@ -153,11 +157,11 @@ class rdeFBA_Problem:
         var_max *= scaling_vec
         df_varmin = pd.DataFrame(var_min, columns=var_vec, index=tgrid)
         df_varmax = pd.DataFrame(var_max, columns=var_vec, index=tgrid)
-        df_obj = pd.DataFrame(obj, columns=var_vec, index=['min_new', 'max_new', 'min_old', 'max_old'])
+        # df_obj = pd.DataFrame(obj, columns=var_vec, index=['min_new', 'max_new', 'min_old', 'max_old'])
 
         self.y0 = y0_old
 
-        return df_varmin, df_varmax, df_obj, solution_dicti
+        return df_varmin, df_varmax, solution_dicti  # df_obj, solution_dicti
 
     def get_model_coefficients(self, verbose=True):
         """ Returns all coefficients in the model's objective function and constraints.

@@ -1360,6 +1360,7 @@
   <listOfProducts>
     <speciesReference species="COA" stoichiometry="1.0" constant="true"/>
     <speciesReference species="MAL" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="ACEE" reversible="false">
@@ -1542,6 +1543,7 @@
   <listOfReactants>
     <speciesReference species="ACCOA" stoichiometry="1.0" constant="true"/>
     <speciesReference species="NADH" stoichiometry="2.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="2.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="ETH" stoichiometry="1.0" constant="true"/>
@@ -1566,6 +1568,7 @@
   <listOfProducts>
     <speciesReference species="ACCOA" stoichiometry="1.0" constant="true"/>
     <speciesReference species="NADH" stoichiometry="2.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="2.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="ADK" reversible="false">
@@ -1613,6 +1616,7 @@
   </fbc:geneProductAssociation>
   <listOfReactants>
     <speciesReference species="ATP" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="4.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="ADP" stoichiometry="1.0" constant="true"/>
@@ -1636,6 +1640,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="ATP" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="4.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="CO2TXR" reversible="false">
@@ -1676,6 +1681,7 @@
   <listOfReactants>
     <speciesReference species="QH2" stoichiometry="1.0" constant="true"/>
     <speciesReference species="O2" stoichiometry="0.5" constant="true"/>
+    <speciesReference species="H" stoichiometry="2.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="Q" stoichiometry="1.0" constant="true"/>
@@ -1694,6 +1700,7 @@
   <listOfReactants>
     <speciesReference species="QH2" stoichiometry="1.0" constant="true"/>
     <speciesReference species="O2" stoichiometry="0.5" constant="true"/>
+    <speciesReference species="H" stoichiometry="2.5" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="Q" stoichiometry="1.0" constant="true"/>
@@ -1715,6 +1722,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="SUCC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="DCTAR_rev" reversible="false">
@@ -1728,6 +1736,7 @@
   </fbc:geneProductAssociation>
   <listOfReactants>
     <speciesReference species="SUCC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="SUCCxt" stoichiometry="1.0" constant="true"/>
@@ -1749,6 +1758,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="SUCC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="DCUAR_rev" reversible="false">
@@ -1762,6 +1772,7 @@
   </fbc:geneProductAssociation>
   <listOfReactants>
     <speciesReference species="SUCC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="SUCCxt" stoichiometry="1.0" constant="true"/>
@@ -1783,6 +1794,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="SUCC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="DCUBR_rev" reversible="false">
@@ -1796,6 +1808,7 @@
   </fbc:geneProductAssociation>
   <listOfReactants>
     <speciesReference species="SUCC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="SUCCxt" stoichiometry="1.0" constant="true"/>
@@ -1813,6 +1826,7 @@
   </fbc:geneProductAssociation>
   <listOfReactants>
     <speciesReference species="SUCC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="SUCCxt" stoichiometry="1.0" constant="true"/>
@@ -1831,6 +1845,7 @@
   <listOfReactants>
     <speciesReference species="PYR" stoichiometry="1.0" constant="true"/>
     <speciesReference species="NADH" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="NAD" stoichiometry="1.0" constant="true"/>
@@ -1853,6 +1868,7 @@
   <listOfProducts>
     <speciesReference species="PYR" stoichiometry="1.0" constant="true"/>
     <speciesReference species="NADH" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="DLD2" reversible="false">
@@ -1917,6 +1933,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="ETH" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="ETHUPR_rev" reversible="false">
@@ -1927,6 +1944,7 @@
   </annotation>
   <listOfReactants>
     <speciesReference species="ETH" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="ETHxt" stoichiometry="1.0" constant="true"/>
@@ -1996,6 +2014,7 @@
   <listOfReactants>
     <speciesReference species="FOR" stoichiometry="1.0" constant="true"/>
     <speciesReference species="Q" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="2.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="QH2" stoichiometry="1.0" constant="true"/>
@@ -2015,6 +2034,7 @@
   <listOfReactants>
     <speciesReference species="FOR" stoichiometry="1.0" constant="true"/>
     <speciesReference species="Q" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="2.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="QH2" stoichiometry="1.0" constant="true"/>
@@ -2389,6 +2409,7 @@
   <listOfProducts>
     <speciesReference species="NADH" stoichiometry="1.0" constant="true"/>
     <speciesReference species="PDG13" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="GAPAR_rev" reversible="false">
@@ -2403,6 +2424,7 @@
   <listOfReactants>
     <speciesReference species="NADH" stoichiometry="1.0" constant="true"/>
     <speciesReference species="PDG13" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="T3P1" stoichiometry="1.0" constant="true"/>
@@ -2443,6 +2465,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="GLC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="GLK" reversible="false">
@@ -2533,6 +2556,7 @@
   <listOfProducts>
     <speciesReference species="COA" stoichiometry="1.0" constant="true"/>
     <speciesReference species="CIT" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="GLUPR" reversible="false">
@@ -2731,11 +2755,12 @@
     </ram:RAM>
   </annotation>
   <listOfReactants>
-    <speciesReference species="LACxt" stoichiometry="1.0" constant="true"/>
-    <speciesReference species="HEXT" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="LAC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
-    <speciesReference species="LAC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="LACxt" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="HEXT" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="LACUP" reversible="false" fbc:lowerFluxBound="T_LACUP_FBClower" fbc:upperFluxBound="T_LACUP_FBCupper">
@@ -2745,11 +2770,12 @@
     </ram:RAM>
   </annotation>
   <listOfReactants>
-    <speciesReference species="LAC" stoichiometry="1.0" constant="true"/>
-  </listOfReactants>
-  <listOfProducts>
     <speciesReference species="LACxt" stoichiometry="1.0" constant="true"/>
     <speciesReference species="HEXT" stoichiometry="1.0" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="LAC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="LACYR" reversible="false">
@@ -2767,6 +2793,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="LCTS" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="LACYR_rev" reversible="false">
@@ -2780,6 +2807,7 @@
   </fbc:geneProductAssociation>
   <listOfReactants>
     <speciesReference species="LCTS" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="LCTSxt" stoichiometry="1.0" constant="true"/>
@@ -2838,6 +2866,7 @@
   <listOfProducts>
     <speciesReference species="NADH" stoichiometry="1.0" constant="true"/>
     <speciesReference species="OA" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="MDHR_rev" reversible="false">
@@ -2852,6 +2881,7 @@
   <listOfReactants>
     <speciesReference species="NADH" stoichiometry="1.0" constant="true"/>
     <speciesReference species="OA" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="MAL" stoichiometry="1.0" constant="true"/>
@@ -2888,6 +2918,7 @@
   <listOfReactants>
     <speciesReference species="NADH" stoichiometry="1.0" constant="true"/>
     <speciesReference species="Q" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="3.5" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="NAD" stoichiometry="1.0" constant="true"/>
@@ -2956,6 +2987,7 @@
   <listOfProducts>
     <speciesReference species="FDP" stoichiometry="1.0" constant="true"/>
     <speciesReference species="ADP" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="PFKB" reversible="false">
@@ -2974,6 +3006,7 @@
   <listOfProducts>
     <speciesReference species="FDP" stoichiometry="1.0" constant="true"/>
     <speciesReference species="ADP" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="PFLA" reversible="false">
@@ -3094,6 +3127,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="D6PGC" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="PGMR" reversible="false">
@@ -3143,6 +3177,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="PI" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="PIUP2R_rev" reversible="false">
@@ -3156,6 +3191,7 @@
   </fbc:geneProductAssociation>
   <listOfReactants>
     <speciesReference species="PI" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="PIxt" stoichiometry="1.0" constant="true"/>
@@ -3197,6 +3233,7 @@
   <listOfProducts>
     <speciesReference species="NADPH" stoichiometry="1.0" constant="true"/>
     <speciesReference species="NAD" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="2.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="PPA" reversible="false">
@@ -3231,6 +3268,7 @@
   <listOfProducts>
     <speciesReference species="OA" stoichiometry="1.0" constant="true"/>
     <speciesReference species="PI" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="PPSA" reversible="false">
@@ -3250,6 +3288,7 @@
     <speciesReference species="PEP" stoichiometry="1.0" constant="true"/>
     <speciesReference species="AMP" stoichiometry="1.0" constant="true"/>
     <speciesReference species="PI" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="PTAR" reversible="false">
@@ -3336,6 +3375,7 @@
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="PYR" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="PYRUPR_rev" reversible="false">
@@ -3346,6 +3386,7 @@
   </annotation>
   <listOfReactants>
     <speciesReference species="PYR" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="PYRxt" stoichiometry="1.0" constant="true"/>
@@ -3882,6 +3923,7 @@
   <listOfProducts>
     <speciesReference species="D6PGL" stoichiometry="1.0" constant="true"/>
     <speciesReference species="NADPH" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
 </reaction>
 <reaction id="ZWFR_rev" reversible="false">
@@ -3896,6 +3938,7 @@
   <listOfReactants>
     <speciesReference species="D6PGL" stoichiometry="1.0" constant="true"/>
     <speciesReference species="NADPH" stoichiometry="1.0" constant="true"/>
+    <speciesReference species="H" stoichiometry="1.0" constant="true"/>
   </listOfReactants>
   <listOfProducts>
     <speciesReference species="G6P" stoichiometry="1.0" constant="true"/>
@@ -3933,6 +3976,20 @@
   <listOfProducts>
     <speciesReference species="FUM" stoichiometry="1.0" constant="true"/>
   </listOfProducts>
+</reaction>
+<reaction id="Maintenance" name="Maintenance" reversible="false">
+	<annotation>
+		<ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
+			<ram:reaction ram:kcatForward="" ram:kcatBackward="" ram:maintenanceScaling="0.002337959092682"/>
+		</ram:RAM>
+	</annotation>
+	<listOfReactants>
+		<speciesReference species="ATP" stoichiometry="1" constant="true"/>
+	</listOfReactants>
+	<listOfProducts>
+		<speciesReference species="ADP" stoichiometry="1" constant="true"/>
+		<speciesReference species="PI" stoichiometry="1" constant="true"/>
+	</listOfProducts>
 </reaction>
 <reaction id="T_ACEA" reversible="false" fbc:lowerFluxBound="T_ACEA_FBClower" fbc:upperFluxBound="T_ACEA_FBCupper">
   <annotation>
@@ -7321,22 +7378,8 @@
     </ram:RAM>
   </annotation>
   <listOfReactants>
-    <speciesReference species="Quota_protein" stoichiometry="0.01" constant="true"/>
+    <speciesReference species="Quota_protein" stoichiometry="0.001" constant="true"/>
   </listOfReactants>
-</reaction>
-<reaction id="Maintenance" name="Maintenance" reversible="false">
-	<annotation>
-		<ram:RAM xmlns:ram="https://www.fairdomhub.org/sops/304">
-			<ram:reaction ram:kcatForward="" ram:kcatBackward="" ram:maintenanceScaling="0.002337959092682"/>
-		</ram:RAM>
-	</annotation>
-	<listOfReactants>
-		<speciesReference species="ATP" stoichiometry="1" constant="true"/>
-	</listOfReactants>
-	<listOfProducts>
-		<speciesReference species="ADP" stoichiometry="1" constant="true"/>
-		<speciesReference species="PI" stoichiometry="1" constant="true"/>
-	</listOfProducts>
 </reaction>
 </listOfReactions>
 
@@ -10592,7 +10635,7 @@
 
 <listOfParameters>
   <parameter id="epsilon_trans_E" constant="true" value="0.0"/>
-  <parameter id="epsilon_trans_RP" constant="true" value="1e-05"/>
+  <parameter id="epsilon_trans_RP" constant="true" value="0.0"/>
   <parameter id="theta_xt" constant="true" value="1e-05"/>
   <parameter id="theta_RP" constant="true" value="1e-06"/>
   <parameter id="theta_v" constant="true" value="1e-05"/>
@@ -10714,86 +10757,86 @@
   <parameter id="T_RbsR_FBClower" value="NaN" constant="false" />
   <parameter id="T_RpiR_FBCupper" value="NaN" constant="false" />
   <parameter id="T_RpiR_FBClower" value="NaN" constant="false" />
+  <parameter id="qual_con_glpR_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_ACS_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_fnr_bar" value="NaN" constant="false" />
+  <parameter id="PYR_neg_aux3" value="NaN" constant="false" />
+  <parameter id="AC_neg" value="NaN" constant="false" />
+  <parameter id="Lcts_neg" value="NaN" constant="false" />
+  <parameter id="RbsR_neg" value="NaN" constant="false" />
+  <parameter id="Rib_neg_aux" value="NaN" constant="false" />
+  <parameter id="Lcts_aux" value="NaN" constant="false" />
+  <parameter id="qual_con_DCTAR_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_GLPA_bar" value="NaN" constant="false" />
+  <parameter id="ArcA_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_DCUBR_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_cra_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_iclR_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_MDHR_bar" value="NaN" constant="false" />
+  <parameter id="F6P_neg" value="NaN" constant="false" />
+  <parameter id="O2_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_NDH_bar" value="NaN" constant="false" />
+  <parameter id="Glc_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_ACEE_bar" value="NaN" constant="false" />
   <parameter id="Lcts_neg_aux" value="NaN" constant="false" />
   <parameter id="qual_con_arcA_bar" value="NaN" constant="false" />
-  <parameter id="DLD1R_aux" value="NaN" constant="false" />
-  <parameter id="qual_con_DCUBR_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_galR_bar" value="NaN" constant="false" />
-  <parameter id="GlpR_neg" value="NaN" constant="false" />
-  <parameter id="GG_aux" value="NaN" constant="false" />
-  <parameter id="GL_neg" value="NaN" constant="false" />
-  <parameter id="CFSS_aux" value="NaN" constant="false" />
-  <parameter id="GLC_aux" value="NaN" constant="false" />
-  <parameter id="GalRS_neg" value="NaN" constant="false" />
-  <parameter id="Arca_GlpR_neg" value="NaN" constant="false" />
-  <parameter id="qual_con_ADHER_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_dcuS_bar" value="NaN" constant="false" />
-  <parameter id="DcuR_aux" value="NaN" constant="false" />
-  <parameter id="RbsR_neg" value="NaN" constant="false" />
-  <parameter id="ArcA_neg" value="NaN" constant="false" />
-  <parameter id="Arca_neg" value="NaN" constant="false" />
-  <parameter id="qual_con_ACEB_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_FUMBR_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_GLCPTS_bar" value="NaN" constant="false" />
-  <parameter id="Mlc_neg" value="NaN" constant="false" />
-  <parameter id="qual_con_PPSA_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_rbsR_bar" value="NaN" constant="false" />
-  <parameter id="Lcts_neg" value="NaN" constant="false" />
-  <parameter id="ArcA_aux" value="NaN" constant="false" />
-  <parameter id="Rib_neg" value="NaN" constant="false" />
-  <parameter id="qual_con_glpR_bar" value="NaN" constant="false" />
-  <parameter id="Glcpts_aux2" value="NaN" constant="false" />
-  <parameter id="qual_con_ACEE_bar" value="NaN" constant="false" />
-  <parameter id="Gl_neg_aux" value="NaN" constant="false" />
-  <parameter id="qual_con_CYDA_bar" value="NaN" constant="false" />
-  <parameter id="Lcts_aux" value="NaN" constant="false" />
-  <parameter id="qual_con_galS_bar" value="NaN" constant="false" />
-  <parameter id="SuccEth_neg" value="NaN" constant="false" />
-  <parameter id="qual_con_pdhR_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_SUCA_bar" value="NaN" constant="false" />
-  <parameter id="PYR_neg_aux3" value="NaN" constant="false" />
-  <parameter id="FDP_aux" value="NaN" constant="false" />
-  <parameter id="Glc_neg" value="NaN" constant="false" />
-  <parameter id="qual_con_iclR_bar" value="NaN" constant="false" />
-  <parameter id="FNR_aux" value="NaN" constant="false" />
-  <parameter id="carbon" value="NaN" constant="false" />
-  <parameter id="qual_con_RPIBR_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_lacI_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_GLPD_bar" value="NaN" constant="false" />
-  <parameter id="Rib_aux" value="NaN" constant="false" />
-  <parameter id="SuccEth_neg_aux" value="NaN" constant="false" />
-  <parameter id="qual_con_fadR_bar" value="NaN" constant="false" />
-  <parameter id="O2_neg" value="NaN" constant="false" />
-  <parameter id="F6P_neg" value="NaN" constant="false" />
-  <parameter id="AC_neg" value="NaN" constant="false" />
-  <parameter id="PYR_aux1" value="NaN" constant="false" />
-  <parameter id="IclR_neg" value="NaN" constant="false" />
-  <parameter id="LacPyr_neg" value="NaN" constant="false" />
   <parameter id="qual_con_dcuR_bar" value="NaN" constant="false" />
-  <parameter id="DFPP_aux" value="NaN" constant="false" />
-  <parameter id="qual_con_PYKF_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_FRDA_bar" value="NaN" constant="false" />
-  <parameter id="LacPyr_neg_aux" value="NaN" constant="false" />
-  <parameter id="Gal_aux" value="NaN" constant="false" />
-  <parameter id="Rib_neg_aux" value="NaN" constant="false" />
-  <parameter id="qual_con_MDHR_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_GLCPTS_bar" value="NaN" constant="false" />
   <parameter id="Glc_aux" value="NaN" constant="false" />
-  <parameter id="carbon_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_FRDA_bar" value="NaN" constant="false" />
+  <parameter id="Arca_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_FUMBR_bar" value="NaN" constant="false" />
+  <parameter id="SuccEth_neg_aux" value="NaN" constant="false" />
+  <parameter id="carbon" value="NaN" constant="false" />
   <parameter id="qual_con_ACEA_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_fadR_bar" value="NaN" constant="false" />
+  <parameter id="Gal_aux" value="NaN" constant="false" />
   <parameter id="O2_Cra_neg" value="NaN" constant="false" />
-  <parameter id="Glcpts_aux1" value="NaN" constant="false" />
-  <parameter id="qual_con_NDH_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_fnr_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_cra_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_ACS_bar" value="NaN" constant="false" />
-  <parameter id="FNR_neg" value="NaN" constant="false" />
-  <parameter id="Cra_neg" value="NaN" constant="false" />
-  <parameter id="LacI_neg" value="NaN" constant="false" />
-  <parameter id="qual_con_FDNG_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_mlc_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_GLPD_bar" value="NaN" constant="false" />
+  <parameter id="LacPyr_neg_aux" value="NaN" constant="false" />
   <parameter id="qual_con_rpiR_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_GLPA_bar" value="NaN" constant="false" />
-  <parameter id="qual_con_DCTAR_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_ADHER_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_galR_bar" value="NaN" constant="false" />
+  <parameter id="GLC_aux" value="NaN" constant="false" />
+  <parameter id="IclR_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_SUCA_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_pdhR_bar" value="NaN" constant="false" />
+  <parameter id="SuccEth_neg" value="NaN" constant="false" />
+  <parameter id="FNR_neg" value="NaN" constant="false" />
+  <parameter id="carbon_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_dcuS_bar" value="NaN" constant="false" />
+  <parameter id="qual_con_galS_bar" value="NaN" constant="false" />
+  <parameter id="GlpR_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_CYDA_bar" value="NaN" constant="false" />
+  <parameter id="CFSS_aux" value="NaN" constant="false" />
+  <parameter id="Glcpts_aux1" value="NaN" constant="false" />
+  <parameter id="Mlc_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_RPIBR_bar" value="NaN" constant="false" />
+  <parameter id="DFPP_aux" value="NaN" constant="false" />
+  <parameter id="PYR_aux1" value="NaN" constant="false" />
+  <parameter id="qual_con_mlc_bar" value="NaN" constant="false" />
+  <parameter id="DcuR_aux" value="NaN" constant="false" />
+  <parameter id="qual_con_rbsR_bar" value="NaN" constant="false" />
+  <parameter id="LacI_neg" value="NaN" constant="false" />
+  <parameter id="FDP_aux" value="NaN" constant="false" />
+  <parameter id="Gl_neg_aux" value="NaN" constant="false" />
+  <parameter id="FNR_aux" value="NaN" constant="false" />
+  <parameter id="Rib_aux" value="NaN" constant="false" />
+  <parameter id="qual_con_lacI_bar" value="NaN" constant="false" />
+  <parameter id="Rib_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_FDNG_bar" value="NaN" constant="false" />
+  <parameter id="LacPyr_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_ACEB_bar" value="NaN" constant="false" />
+  <parameter id="Cra_neg" value="NaN" constant="false" />
+  <parameter id="DLD1R_aux" value="NaN" constant="false" />
+  <parameter id="qual_con_PPSA_bar" value="NaN" constant="false" />
+  <parameter id="ArcA_aux" value="NaN" constant="false" />
+  <parameter id="GG_aux" value="NaN" constant="false" />
+  <parameter id="GalRS_neg" value="NaN" constant="false" />
+  <parameter id="qual_con_PYKF_bar" value="NaN" constant="false" />
+  <parameter id="Arca_GlpR_neg" value="NaN" constant="false" />
+  <parameter id="Glcpts_aux2" value="NaN" constant="false" />
+  <parameter id="GL_neg" value="NaN" constant="false" />
 </listOfParameters>
 </model>
 </sbml>

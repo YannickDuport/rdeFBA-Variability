@@ -5,8 +5,8 @@ Collection of routines for (Mixed Integer) Linear Programming
 import numpy as np
 import scipy.sparse as sp
 
-DEFAULT_SOLVER = 'gurobi'
-# DEFAULT_SOLVER = 'cplex'
+# DEFAULT_SOLVER = 'gurobi'
+DEFAULT_SOLVER = 'cplex'
 #DEFAULT_SOLVER = 'soplex'
 #DEFAULT_SOLVER = 'glpk'
 if DEFAULT_SOLVER == 'gurobi':

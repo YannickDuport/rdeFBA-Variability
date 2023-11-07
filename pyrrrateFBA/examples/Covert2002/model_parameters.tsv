@@ -6,7 +6,7 @@ ribosomal_degradation	0.001
 quota_protein_degradation	0.01	
 quota_rest_degradation	0.001	
 epsilon_trans_E	0.00E+00	lower flux bound for active regulated enzyme translation
-epsilon_trans_RP	1.00E-05	lower flux bound for active regulatory protein translation
+epsilon_trans_RP	0.00E+00	lower flux bound for active regulatory protein translation. Setting it to 0 breaks regulation
 theta_xt	1.00E-05	
 theta_RP	1.00E-06	
 theta_v	1.00E-05	

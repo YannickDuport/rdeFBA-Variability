@@ -115,8 +115,8 @@ def perform_rdefba(model, optimization_kwargs={}, **kwargs):
         tgrid, tt_shift, sol_y, sol_u, sol_x, obj_val = mi_cp_linprog(mtx, t_0, t_end, n_steps=n_steps,
                                                                       varphi=varphi, **optimization_kwargs)
     else:
-        if run_rdeFBA and rkm.s > 1:
-            warn("Higher-order Runge-Kutta methods (> Order 1) don't work as intended yet. Use with caution!")
+        if run_rdeFBA and rkm.get_stage_number() > 1:
+            warn("Multi-stage Runge-Kutta methods don't work as intended yet. Use with caution!")
         tgrid, tt_shift, sol_y, sol_u, sol_x, obj_val = cp_rk_linprog(mtx, rkm, t_0, t_end, n_steps=n_steps,
                                                                       varphi=varphi, **optimization_kwargs)
         # sol_x = np.zeros((0, sol_u.shape[1]))

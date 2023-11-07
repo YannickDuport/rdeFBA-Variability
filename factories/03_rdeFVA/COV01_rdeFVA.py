@@ -1,6 +1,8 @@
 """
 Run rdeFVA of Carbon Core Model (Scenario 1) with increased initial C2 quantity (2500mmol)
 Results are used to generate Tables in appendix
+
+Note: This script only works with CPLEX!
 """
 
 import pandas as pd
